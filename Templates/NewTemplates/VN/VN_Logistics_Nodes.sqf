@@ -20,6 +20,95 @@ A3A_logistics_vehicleHardpoints append [
     ,["vn_c_car_02_01" call A3A_fnc_classNameToModel,[
         [1,         [0,-0.2,0.15],       []  ],
         [1,         [0,-0.8,0.15],      []  ]
+    ]],
+    ["gm_gc_army_ural375d_cargo" call A3A_fnc_classNameToModel, [
+        [1,             [0,0.14,-0.8],         [1,2]],
+        [1,             [0,-0.66,-0.8],        [3,4,5,11,9]],
+        [1,             [0,-1.4,-0.8],         [6,7]],
+        [1,             [0,-2.2,-0.8],         [10,12]],
+        [1,             [0,-3,-0.8],           [8,13,14]]
+    ]],
+    ["gm_gc_army_ural4320_cargo" call A3A_fnc_classNameToModel, [
+        [1,             [0,0.14,-0.8],         [1,2]],
+        [1,             [0,-0.66,-0.8],        [3,4,5,11,9]],
+        [1,             [0,-1.4,-0.8],         [6,7]],
+        [1,             [0,-2.2,-0.8],         [10,12]],
+        [1,             [0,-3,-0.8],           [8,13,14]]
+    ]],
+      ["gm_gc_civ_ural375d_cargo" call A3A_fnc_classNameToModel, [
+        [1,             [0,0.14,-0.8],         [1,2]],
+        [1,             [0,-0.66,-0.8],        [3,4,5,11,9]],
+        [1,             [0,-1.4,-0.8],         [6,7]],
+        [1,             [0,-2.2,-0.8],         [10,12]],
+        [1,             [0,-3,-0.8],           [8,13,14]]
+    ]],
+    ["gm_pl_army_ural4320_cargo" call A3A_fnc_classNameToModel, [
+        [1,             [0,0.14,-0.8],         [1,2]],
+        [1,             [0,-0.66,-0.8],        [3,4,5,11,9]],
+        [1,             [0,-1.4,-0.8],         [6,7]],
+        [1,             [0,-2.2,-0.8],         [10,12]],
+        [1,             [0,-3,-0.8],           [8,13,14]]
+    ]],
+    ["gm_dk_army_u1300l_container" call A3A_fnc_classNameToModel, [
+        [1,             [0,-0.2,-1.25],         []],
+        [1,             [0,-1,-1.25],        []],
+        [1,             [0,-1.8,-1.25],         []]
+    ]],
+    ["gm_ge_army_u1300l_cargo" call A3A_fnc_classNameToModel, [
+        [1,             [0,-0.2,-1.25],         []],
+        [1,             [0,-1,-1.25],        []],
+        [1,             [0,-1.8,-1.25],         []]
+    ]],
+    ["gm_ge_civ_u1300l" call A3A_fnc_classNameToModel, [
+        [1,             [0,-0.15,-0.9],         []],
+        [1,             [00,-0.95,-0.9],        []],
+        [1,             [0,-01.75,-0.9],         []]
+    ]],
+    ["gm_ge_army_kat1_454_cargo" call A3A_fnc_classNameToModel, [
+        [1,             [0,1.6,-0.4],         []],
+        [1,             [0,0.8,-0.4],        []],
+        [1,             [0,0,-0.4],         []],
+        [1,             [0,-0.8,-0.4],        []],
+        [1,             [0,-1.6,-0.4],         []],
+        [1,             [0,-2.4,-0.4],        []],
+        [1,             [0,-3.2,-0.4],         []],
+        [1,             [0,-4,-0.4],        []]
+    ]],
+    ["gm_ge_army_kat1_452_container" call A3A_fnc_classNameToModel, [
+        [1,             [0,1.6,-0.4],         []],
+        [1,             [0,0.8,-0.4],        []],
+        [1,             [0,0,-0.4],         []],
+        [1,             [0,-0.8,-0.4],        []],
+        [1,             [0,-1.6,-0.4],         []],
+        [1,             [0,-2.4,-0.4],        []],
+        [1,             [0,-3.2,-0.4],         []],
+        [1,             [0,-4,-0.4],        []]
+    ]],
+    ["gm_ge_army_kat1_451_container" call A3A_fnc_classNameToModel, [
+        [1,             [0,0.14,-0.85],         [0]],
+        [1,             [0,-0.66,-0.85],        [0]],
+        [1,             [0,-1.4,-0.85],         [0]],
+        [1,             [0,-2.2,-0.85],         [0]],
+        [1,             [0,-3,-0.85],           [0]]
+    ]],
+    ["gm_ge_army_kat1_451_cargo" call A3A_fnc_classNameToModel, [
+        [1,             [0,0.14,-0.85],         [0]],
+        [1,             [0,-0.66,-0.85],        [0]],
+        [1,             [0,-1.4,-0.85],         [0]],
+        [1,             [0,-2.2,-0.85],         [0]],
+        [1,             [0,-3,-0.85],           [0]]
+    ]],
+    ["gm_pl_army_uaz469_cargo" call A3A_fnc_classNameToModel,[
+        [1,         [-0.1, -1.65, -1.2],    [4,5]]
+    ]],
+    ["gm_ge_army_iltis_cargo" call A3A_fnc_classNameToModel,[
+        [1,         [-0.15, -1.75, -1.1],    []]
+    ]],
+    ["gm_gc_army_uaz469_cargo" call A3A_fnc_classNameToModel,[
+        [1,         [-0.15, -1.75, -1.1],    []]
+    ]],
+    ["gm_ge_bgs_k125" call A3A_fnc_classNameToModel,[
+        [1,         [-0.195, -1.005, -0.6],    [0]]
     ]]
 ];
 A3A_logistics_attachmentOffset append [
@@ -50,6 +139,11 @@ A3A_logistics_attachmentOffset append [
     ,["\vn\static_f_vietnam_02\l70mk2\vn_static_l70mk2.p3d",[0.2,0,1.58],[0,0,0],4,1500]
     ,["\vn\static_f_vietnam_02\l60mk3\vn_static_l60mk3.p3d",[0,0,1.77],[0,0,0],7,3000]
     ,["\vn\static_f_vietnam_02\type56rr\vn_o_static_type56rr.p3d",[-0.55,0,1.48],[0,-1,0],4,250]
+    ,["gm_ge_army_mg3_aatripod" call A3A_fnc_classNameToModel,                   [0, 0, 1.5],            [0, -1, 0],           4,      100]
+    ,["gm_gc_army_dshkm_aatripod" call A3A_fnc_classNameToModel,                 [0, 0, 1.75],           [0, -1, 0],           4,      100]
+    ,["gm_ge_army_milan_launcher_tripod" call A3A_fnc_classNameToModel,          [0, 0, 1.2],            [0, -1, 0],           4,      250]
+    ,["gm_gc_army_fagot_launcher_tripod" call A3A_fnc_classNameToModel,          [0, 0, 1.2],            [0, -1, 0],           4,      250]
+    ,["gm_gc_army_spg9_tripod" call A3A_fnc_classNameToModel,                    [0, 0, 1.1],            [0, -1, 0],           4,      250]
 ];
 A3A_logistics_coveredVehicles append [
     "vn_b_wheeled_m54_03"
@@ -75,6 +169,13 @@ A3A_logistics_coveredVehicles append [
     ,"vn_c_wheeled_m151_02"
     ,"vn\wheeled_f_vietnam_02\car\vn_wheeled_car_02.p3d"
     ,"vn\wheeled_f_vietnam_02\car\vn_wheeled_car_04.p3d"
+    ,"gm_ge_army_kat1_451_cargo"
+    ,"gm_ge_army_u1300l_cargo"
+    ,"gm_ge_army_kat1_451_container"
+    ,"gm_ge_army_kat1_454_cargo"
+    ,"gm_gc_army_ural375d_cargo"
+    ,"gm_gc_bgs_ural4320_cargo"
+    ,"gm_pl_army_ural4320_cargo"
 ];
 A3A_logistics_weapons append [
     ["\vn\static_f_vietnam\zpu4\vn_static_zpu4_01.p3d",[]]
@@ -109,4 +210,9 @@ A3A_logistics_weapons append [
     ,["\vn\static_f_vietnam\PK\vn_static_PK_low.p3d",[]]
     ,["\vn\static_f_vietnam_02\l70mk2\vn_static_l70mk2.p3d",[]]
     ,["\vn\static_f_vietnam_02\l60mk3\vn_static_l60mk3.p3d",[]]
+    ,["gm_gc_army_dshkm_aatripod" call A3A_fnc_classNameToModel,[]]
+    ,["gm_ge_army_mg3_aatripod" call A3A_fnc_classNameToModel,[]]
+    ,["gm_gc_army_fagot_launcher_tripod" call A3A_fnc_classNameToModel,[]]
+    ,["gm_ge_army_milan_launcher_tripod" call A3A_fnc_classNameToModel,[]]
+    ,["gm_gc_army_spg9_tripod" call A3A_fnc_classNameToModel,[]]
 ];
