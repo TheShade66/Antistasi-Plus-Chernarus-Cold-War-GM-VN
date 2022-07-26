@@ -3,7 +3,7 @@ private _title = call SCRT_fnc_misc_getMissionTitle;
 _credits = [ 
 	[ _title, [antistasiPlusVersion]], 
 	[ "Antistasi Version:", [antistasiVersion]], 
-	[ "Antistasi Plus Authors:", ["Socrates"]], 
+	[ "Antistasi Plus Authors:", ["Socrates","Edit by TheNightBird"]], 
 	[ "Antistasi Authors:", ["Barbolani","Official Antistasi Community"]] 
 ];
 _layer = "credits1" call bis_fnc_rscLayer;
