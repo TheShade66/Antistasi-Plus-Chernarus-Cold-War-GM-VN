@@ -1,4 +1,4 @@
-
+// TheNightBird modif
 
 if (!musicON) exitWith {1 fadeMusic 0.5; playMusic ""};
 
@@ -23,7 +23,7 @@ if (isNil "EHMusic") then
 				{
 				if (_behaviour == "STEALTH") then
 					{
-					_song = selectRandom (["vn_calm_before_the_storm", "vn_behind_enemy_lines","AmbientTvn_enemy_territory","vn_stealth_mode", "AmbientTrack04a_F", "AmbientTrack04_F","Music_Freeroam_02_MissionStart",
+					_song = selectRandom (["vn_calm_before_the_storm", "vn_behind_enemy_lines","AmbientTvn_enemy_territory","vn_stealth_mode", "AmbientTrack04a_F", "AmbientTrack04_F","Music_Freeroam_02_MissionStart","vn_dark_waters",
 					 "Track04_Underwater1","Track05_Underwater2","Defcon","Wasteland","SkyNet","LeadTrack01_F_Orange","AmbientTrack02_F_Orange","AmbientTrack01a_F_Tacops","AmbientTrack01_F_Tank","Track_C_02","Track_C_09","Track_O_02"] - [_this select 0]);
 					}
 				else
@@ -40,15 +40,15 @@ if (isNil "EHMusic") then
 						};
 					};
 				};
-			_played = selectRandom ([1,2]);
+			_played = selectRandom ([1,2,3]);
 			if (_played == 1) then
 				{
-				1 fadeMusic 0;
+				1 fadeMusic 0.5;
 				playmusic _song;
 				}
 			else
 				{
-				3 fadeMusic 0.4;
+				3 fadeMusic 0;
 				playmusic _song;
 				};
 			};
@@ -67,7 +67,7 @@ else
 		{
 		if (_behaviour == "STEALTH") then
 			{
-			_song = selectRandom ["vn_calm_before_the_storm", "vn_behind_enemy_lines", "AmbientTvn_enemy_territory", "vn_stealth_mode", "AmbientTrack04a_F", "AmbientTrack04_F","Music_Freeroam_02_MissionStart",
+			_song = selectRandom ["vn_calm_before_the_storm", "vn_behind_enemy_lines", "AmbientTvn_enemy_territory", "vn_stealth_mode", "AmbientTrack04a_F", "AmbientTrack04_F","Music_Freeroam_02_MissionStart","vn_dark_waters",
 					 "Track04_Underwater1","Track05_Underwater2","Defcon","Wasteland","SkyNet","LeadTrack01_F_Orange","AmbientTrack02_F_Orange","AmbientTrack01a_F_Tacops","AmbientTrack01_F_Tank","Track_C_02","Track_C_09","Track_O_02"];
 			}
 		else

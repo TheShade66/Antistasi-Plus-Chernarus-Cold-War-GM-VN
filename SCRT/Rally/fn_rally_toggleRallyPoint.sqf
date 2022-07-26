@@ -8,12 +8,13 @@ if (!isNil "isRallyPointPlaced" && {isRallyPointPlaced}) then {
         ["Rally Point", "Rally point can be abolished only on HQ or near the Rally Point itself."] call SCRT_fnc_misc_showDeniedActionHint;
     };
 
+// TheNightBird modif
     private _cost = [rallyPoint] call A3A_fnc_vehiclePrice;
     private _remainingTravels = rallyPointRoot getVariable ["remainingTravels", 0];
     if (_remainingTravels > 0) then {
         private _finalCost = _cost * _remainingTravels;
-        if (_finalCost < 100) then {
-            _finalCost = 100;
+        if (_finalCost < 20) then {
+            _finalCost = 20;
         };
         
         [0, round (_finalCost/1.3)] remoteExec ["A3A_fnc_resourcesFIA",2];

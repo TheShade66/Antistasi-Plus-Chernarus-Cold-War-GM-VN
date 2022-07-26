@@ -78,7 +78,7 @@ class Params
     {
         title = "Enable Teamkill Punish";
         values[] = {9999,1,0};
-        texts[] = {"Load From Save (Default - Yes)","Yes","No"};
+        texts[] = {"Load From Save (Default - No)","Yes","No"};
         default = 9999;
     };
     class mRadius
@@ -112,8 +112,8 @@ class Params
     class unlockItem
     {
         title = "Number of the same item required to unlock";
-        values[] = {9999,15,20,25,30,35,40,45,50,100,200,500};
-        texts[] = {"Load From Save (Default - 25)","15","20","25","30","35","40","45","50","100","200","500"};
+        values[] = {9999,10,15,20,25,30,35,40,45,50,100,200,500};
+        texts[] = {"Load From Save (Default - 10)","10","15","20","25","30","35","40","45","50","100","200","500"};
         default = 9999;
     };
     class memberOnlyMagLimit
@@ -162,7 +162,7 @@ class Params
     {
         title = "Do Unlocked Weapons Automatically Unlock Their Standard Magazine?";
         values[] = {9999,1,0};
-        texts[] = {"Load From Save (Default - No)","Yes","No"};
+        texts[] = {"Load From Save (Default - Yes)","Yes","No"};
         default = 9999;
     };
     class allowGuidedLaunchers
@@ -289,7 +289,7 @@ class Params
      {
           title="How many persons required to unflip vehicle";
 		values[]={9999, 1, 2, 3, 4};
-		texts[]={"Load From Save (Default - 3)","1","2","3","4"};
+		texts[]={"Load From Save (Default - 1)","1","2","3","4"};
 		default = 9999;
      };
      class magRepack
@@ -316,8 +316,8 @@ class Params
      class playerStartingMoney
      {
           title = "Initial Player Money";
-          values[] = {9999, 0, 100, 200, 500, 1000};
-          texts[] =  {"Load From Save (Default - 200)", "0", "100", "200", "500","1000"};
+          values[] = {9999, 0, 100, 200, 400, 1000};
+          texts[] =  {"Load From Save (Default - 400)", "0", "100", "200", "400","1000"};
           default = 9999;
      };
      class rallyPointSpawnCount
@@ -338,14 +338,14 @@ class Params
      {
         title = "AI Control Time Limit";
         values[] = {9999,60,120,300,900,1800};
-        texts[] = {"Load From Save (Default - 60 seconds)","1 minute","2 minutes","5 minutes","15 minutes", "30 minutes"};
+        texts[] = {"Load From Save (Default - 2 minutes)","1 minute","2 minutes","5 minutes","15 minutes", "30 minutes"};
         default = 9999;
      };
      class deathPenalty
      {
           title = "Player Death Penalty (How many money player will lose on death)";
           values[] = {9999, 0.15, 0.3, 0.5, 0.75, 1};
-          texts[] =  {"Load From Save (Default - 30%)", "15%", "30%", "50%", "75%", "100%"};
+          texts[] =  {"Load From Save (Default - 15%)", "15%", "30%", "50%", "75%", "100%"};
           default = 9999;
      };
      class saveZeusBuildings
@@ -359,7 +359,7 @@ class Params
      {
           title = "Enemy AI Maximum Accuracy";
           values[] = {9999, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1};
-          texts[] =  {"Load From Save (Default - 0.5)", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1"};
+          texts[] =  {"Load From Save (Default - 0.4)", "0.1", "0.2", "0.3", "0.4", "0.5", "0.6", "0.7", "0.8", "0.9", "1"};
           default = 9999;
      };
 

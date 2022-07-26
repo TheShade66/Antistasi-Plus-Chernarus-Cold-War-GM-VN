@@ -42,15 +42,15 @@ A3A_paramTable = [
     ["allowFuturisticSupports", "allowFuturisticSupports", [], false],
 
     ["membershipEnabled", "membership", [], true],
-    ["tkpunish", "tkPunish", [], true],
+    ["tkpunish", "tkPunish", [], false],                // TheNightBird modif
     ["pvpEnabled", "allowPvP", [], true],
-    ["teamSwitchDelay", "teamSwitchDelay", ["server"], 3600],
+    ["teamSwitchDelay", "teamSwitchDelay", ["server"], 360],
 
-    ["startWithLongRangeRadio", "startWithLongRangeRadio", [], false],
+    ["startWithLongRangeRadio", "startWithLongRangeRadio", [], true],
     ["helmetLossChance", "helmetLossChance", [], 33],
-    ["minWeaps", "unlockItem", [], 25],
+    ["minWeaps", "unlockItem", [], 10],
     ["memberOnlyMagLimit", "memberOnlyMagLimit", [], 40],				// dead param
-    ["unlockedUnlimitedAmmo", "unlockedUnlimitedAmmo", [], 0],			// these three are not bool for some reason
+    ["unlockedUnlimitedAmmo", "unlockedUnlimitedAmmo", [], 1],			// these three are not bool for some reason
     ["allowGuidedLaunchers", "allowGuidedLaunchers", [], 1],
 
     ["logLevel", "LogLevel", ["override"], 2],
@@ -79,26 +79,26 @@ A3A_paramTable = [
 
     // Not visible parameters yet, but otherwise handled the same way
     ["distanceSPWN", "", ["oldsave"], _distanceSpwn],
-    ["maxUnits", "", ["oldsave"], 140],
+    ["maxUnits", "", ["oldsave"], 80],
     ["maxConstructions", "", ["oldsave"], 150],
 
     //Antistasi Plus parameters
     ["settingsTimeMultiplier", "timeMultiplier", [], 1],
-    ["playerStartingMoney", "playerStartingMoney", [], 200],
+    ["playerStartingMoney", "playerStartingMoney", [], 400],
     ["rallyPointSpawnCount", "rallyPointSpawnCount", [], 10],
     ["factionsDefeat", "factionsDefeat", [], true],
     ["areRandomEventsEnabled", "randomEvents", [], true],
     ["fastTravelIndividualEnemyCheck", "fastTravelEnemyCheck", [], true],
-    ["unflipPersonCount", "unflipPersonCount", [], 3],
+    ["unflipPersonCount", "unflipPersonCount", [], 1],
     ["playerIcons", "playerIcons", [], true],
     ["magRepack", "magRepack", [], true],
     ["rhsOccupantFaction", "rhsOccupantFaction", ["server"], 0],
     ["threecbfOccupantFaction", "threecbfOccupantFaction", ["server"], 0],
     ["cupOccupantFaction", "cupOccupantFaction", ["server"], 0],
-    ["aiControlTime", "aiControlTime", [], 60],
-    ["deathPenalty", "deathPenalty", [], 0.3],
+    ["aiControlTime", "aiControlTime", [], 120],
+    ["deathPenalty", "deathPenalty", [], 0.15],
     ["saveZeusBuildings", "saveZeusBuildings", [], true],
-    ["aiAccuracyCeiling", "aiAccuracyCeiling", [], 0.5]
+    ["aiAccuracyCeiling", "aiAccuracyCeiling", [], 0.4]
     // beware of the comma
 ];
 
