@@ -2,11 +2,11 @@
 //   Rebel Information   //
 ///////////////////////////
 
-["name", "KPNLF"] call _fnc_saveToTemplate; 						//this line determines the faction name -- Example: ["name", "NATO"] - ENTER ONLY ONE OPTION
+["name", "Panther"] call _fnc_saveToTemplate; 						//this line determines the faction name -- Example: ["name", "NATO"] - ENTER ONLY ONE OPTION
 
-["flag", "vn_flag_camo02"] call _fnc_saveToTemplate; 						//this line determines the flag -- Example: ["flag", "Flag_NATO_F"] - ENTER ONLY ONE OPTION
-["flagTexture", "\vn\objects_f_vietnam\flags\data\vn_flag_01_cam02_co.paa"] call _fnc_saveToTemplate; 				//this line determines the flag texture -- Example: ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] - ENTER ONLY ONE OPTION
-["flagMarkerType", "vn_flag_cam02"] call _fnc_saveToTemplate; 			//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
+["flag", "gm_flag_GE"] call _fnc_saveToTemplate; 						//this line determines the flag -- Example: ["flag", "Flag_NATO_F"] - ENTER ONLY ONE OPTION
+["flagTexture", "\gm\gm_core\data\flags\gm_flag_GE_co.paa"] call _fnc_saveToTemplate; 				//this line determines the flag texture -- Example: ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] - ENTER ONLY ONE OPTION
+["flagMarkerType", "flag_Germany"] call _fnc_saveToTemplate; 			//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
 //////////////////////////
 //  Mission/HQ Objects  //
 //////////////////////////
@@ -25,26 +25,26 @@
 //       Vehicles       //
 //////////////////////////
 
-["vehicleBasic", "vn_c_bicycle_01"] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
+["vehicleBasic", "gm_ge_army_k125"] call _fnc_saveToTemplate; 			//this line determines basic vehicles, the lightest kind available. -- Example: ["vehiclesBasic", ["B_Quadbike_01_F"]] -- Array, can contain multiple assets
 ["vehicleLightUnarmed", "vn_o_car_04_01"] call _fnc_saveToTemplate; 		//this line determines light and unarmed vehicles. -- Example: ["vehiclesLightUnarmed", ["B_MRAP_01_F"]] -- Array, can contain multiple assets
-["vehicleLightArmed", "vn_o_car_04_mg_01"] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F","B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
-["vehicleTruck", "vn_i_wheeled_m54_01"] call _fnc_saveToTemplate; 			//this line determines the trucks -- Example: ["vehiclesTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
-["vehicleAT", "not_supported"] call _fnc_saveToTemplate; 		//this line determines AT vehicle -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
-["vehicleAA", "vn_b_wheeled_m54_mg_02"] call _fnc_saveToTemplate; 		//this line determines AA vehicle -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
+["vehicleLightArmed", "vn_o_car_04_mg_01","gm_ge_army_iltis_mg3"] call _fnc_saveToTemplate; 		//this line determines light and armed vehicles -- Example: ["vehiclesLightArmed",["B_MRAP_01_hmg_F","B_MRAP_01_gmg_F"]] -- Array, can contain multiple assets
+["vehicleTruck", "gm_pl_army_ural4320_cargo"] call _fnc_saveToTemplate; 			//this line determines the trucks -- Example: ["vehiclesTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
+["vehicleAT", "gm_gc_army_uaz469_spg9"] call _fnc_saveToTemplate; 		//this line determines AT vehicle -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
+["vehicleAA", "vn_o_wheeled_btr40_mg_03_nva65"] call _fnc_saveToTemplate; 		//this line determines AA vehicle -- Example: ["vehiclesCargoTrucks", ["B_Truck_01_transport_F","B_Truck_01_covered_F"]] -- Array, can contain multiple assets
 
-["vehicleBoat", "vn_o_boat_02_01"] call _fnc_saveToTemplate; 	//this line determines transport boats -- Example: ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] -- Array, can contain multiple assets
-["vehicleRepair", "vn_i_wheeled_m54_repair"] call _fnc_saveToTemplate; 			//this line determines gun boats -- Example: ["vehiclesGunboats", ["B_Boat_Armed_01_minigun_F"]] -- Array, can contain multiple assets
-["vehicleFuel", "UK3CB_CHD_I_Kraz255_Fuel"] call _fnc_saveToTemplate;
+["vehicleBoat", "vn_o_boat_01_00"] call _fnc_saveToTemplate; 	//this line determines transport boats -- Example: ["vehiclesTransportBoats", ["B_Boat_Transport_01_F"]] -- Array, can contain multiple assets
+["vehicleRepair", "gm_pl_army_ural4320_repair"] call _fnc_saveToTemplate; 			//this line determines gun boats -- Example: ["vehiclesGunboats", ["B_Boat_Armed_01_minigun_F"]] -- Array, can contain multiple assets
+["vehicleFuel", "gm_pl_army_ural375d_refuel"] call _fnc_saveToTemplate;
 
-["vehiclePlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
-["vehiclePayloadPlane", "I_C_Plane_Civil_01_F"] call _fnc_saveToTemplate;
+["vehiclePlane", "gm_ge_airforce_do28d2"] call _fnc_saveToTemplate;
+["vehiclePayloadPlane", "gm_ge_airforce_do28d2"] call _fnc_saveToTemplate;
 ["vehicleHeli", "not_supported"] call _fnc_saveToTemplate; 		//this line determines light helis -- Example: ["vehiclesHelisLight", ["B_Heli_Light_01_F"]] -- Array, can contain multiple assets
 
 ["vehicleCivCar", "vn_c_car_02_01"] call _fnc_saveToTemplate;
-["vehicleCivTruck", "vn_b_wheeled_m54_01_airport"] call _fnc_saveToTemplate;
-["vehicleCivHeli", "C_Heli_Light_01_civil_F"] call _fnc_saveToTemplate;
+["vehicleCivTruck", "gm_gc_civ_ural375d_cargo"] call _fnc_saveToTemplate;
+["vehicleCivHeli", "gm_gc_civ_mi2p"] call _fnc_saveToTemplate;
 ["vehicleCivBoat", "vn_c_boat_08_01"] call _fnc_saveToTemplate;
-["vehicleCivSupply", "vn_b_wheeled_m54_repair_airport"] call _fnc_saveToTemplate;
+["vehicleCivSupply", "gm_pl_army_ural4320_repair"] call _fnc_saveToTemplate;
 
 ["staticMG", "vn_i_static_m1919a4_high"] call _fnc_saveToTemplate; 					//this line determines static MGs -- Example: ["staticMG", ["B_HMG_01_high_F"]] -- Array, can contain multiple assets
 ["staticAT", "vn_o_vc_static_type56rr"] call _fnc_saveToTemplate; 					//this line determinesstatic ATs -- Example: ["staticAT", ["B_static_AT_F"]] -- Array, can contain multiple assets
@@ -62,46 +62,50 @@
 ["mineAT", "vn_mine_m15_mag"] call _fnc_saveToTemplate; 				//this line determines AT mines used for spawning in minefields -- Example: ["minefieldAT", ["ATMine_Range_Mag"]] -- Array, can contain multiple assets
 ["mineAPERS", "vn_mine_m14_mag"] call _fnc_saveToTemplate; 			//this line determines APERS mines used for spawning in minefields -- Example: ["minefieldAPERS", ["APERSMine_Range_Mag"]] -- Array, can contain multiple assets
 
-["breachingExplosivesAPC", [["vn_mine_m112_remote_mag", 1]]] call _fnc_saveToTemplate;
-["breachingExplosivesTank", [["vn_mine_satchel_remote_02_mag", 1], ["vn_mine_m112_remote_mag", 2]]] call _fnc_saveToTemplate;
+["breachingExplosivesAPC", [["vn_mine_m112_remote_mag", 1],["gm_explosive_petn_charge", 1], ["gm_explosive_plnp_charge", 1]]] call _fnc_saveToTemplate;
+["breachingExplosivesTank", [["vn_mine_satchel_remote_02_mag", 1], ["vn_mine_m112_remote_mag", 2],["gm_explosive_petn_charge", 2], ["gm_explosive_plnp_charge", 2]]] call _fnc_saveToTemplate;
 
 ///////////////////////////
 //  Rebel Starting Gear  //
 ///////////////////////////
 //Civ Uniforms
-["uniforms", [
-    "vn_o_uniform_vc_01_01",
-    "vn_o_uniform_vc_01_02",
-    "vn_o_uniform_vc_02_07",
-    "vn_o_uniform_vc_03_02",
-    "vn_o_uniform_vc_04_02",
-    "vn_o_uniform_vc_05_01",
-    "vn_o_uniform_vc_02_05",
-    "vn_o_uniform_vc_04_03",
-    "vn_o_uniform_vc_03_03"
-]] call _fnc_saveToTemplate;
+["uniforms", [ 
+"U_I_C_Soldier_Para_5_F","U_I_C_Soldier_Bandit_1_F","U_O_R_Gorka_01_black_F","U_C_E_LooterJacket_01_F","vn_b_uniform_macv_01_01","vn_b_uniform_macv_02_01",
+"vn_b_uniform_macv_03_01","vn_b_uniform_macv_04_01","vn_b_uniform_macv_05_01","vn_b_uniform_macv_05_06","vn_b_uniform_macv_06_01","vn_b_uniform_macv_01_06","vn_b_uniform_macv_02_06","vn_b_uniform_macv_03_06",
+"vn_b_uniform_macv_04_06","vn_b_uniform_macv_04_20","vn_b_uniform_macv_04_21","vn_b_uniform_macv_05_06","vn_b_uniform_seal_01_01","vn_b_uniform_seal_01_06","vn_b_uniform_seal_01_07","vn_b_uniform_seal_02_01","vn_b_uniform_seal_02_06","vn_b_uniform_seal_02_07",
+"vn_o_vest_05","gm_gc_army_vest_80_belt_str","gm_ge_army_vest_80_belt","gm_ge_army_vest_80_bag","gm_pl_army_vest_80_rig_gry","gm_pl_army_vest_80_rifleman_smg_gry",
+"U_I_C_Soldier_Para_5_F","U_I_C_Soldier_Bandit_1_F","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_3_F","U_I_C_Soldier_Bandit_4_F","U_I_C_Soldier_Bandit_5_F","U_C_Poloshirt_blue","U_C_Poloshirt_burgundy",
+"U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite","U_BG_Guerilla2_1","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_C_HunterBody_grn",
+"U_Marshal","U_C_Man_casual_1_F", "U_C_Man_casual_2_F","U_C_Man_casual_3_F","U_C_Man_casual_4_F","U_C_Man_casual_5_F","U_C_Man_casual_6_F","U_C_Mechanic_01_F","U_C_Uniform_Farmer_01_F","U_C_E_LooterJacket_01_F","U_C_FormalSuit_01_black_F",
+"U_C_FormalSuit_01_gray_F","U_C_FormalSuit_01_blue_F","U_C_FormalSuit_01_khaki_F","U_C_FormalSuit_01_tshirt_black_F","U_C_FormalSuit_01_tshirt_gray_F","gm_gc_airforce_uniform_pilot_80_blu","gm_ge_civ_uniform_blouse_80_gry",
+"gm_ge_ff_uniform_man_80_orn","gm_pl_airforce_uniform_pilot_80_gry","gm_gc_civ_uniform_man_01_80_blk","gm_gc_civ_uniform_man_01_80_blu","gm_gc_civ_uniform_man_02_80_brn","gm_gc_civ_uniform_man_03_80_grn",
+"gm_gc_civ_uniform_man_03_80_blu","gm_gc_civ_uniform_man_03_80_gry","gm_gc_civ_uniform_man_04_80_blu","gm_gc_civ_uniform_man_04_80_gry","gm_gc_civ_uniform_pilot_80_blk"]] call _fnc_saveToTemplate;
 
-["headgear", [
-    "vn_c_conehat_02",
-    "vn_c_conehat_01",
-    "vn_b_headband_05",
-    "vn_b_headband_04",
-    "vn_b_headband_01",
-    "vn_o_boonie_vc_01_01",
-    "vn_o_boonie_vc_01_02"
-]] call _fnc_saveToTemplate;
+["headgear", [																// DONE
+"H_Booniehat_oli","H_Cap_red","H_Cap_blu","H_Cap_oli","H_Cap_tan","H_Cap_blk","H_Cap_grn",
+"H_ShemagOpen_khk","H_ShemagOpen_tan","H_StrawHat","H_StrawHat_dark","H_Hat_blue","H_Hat_brown","H_Hat_camo","H_Hat_grey","H_Hat_checker","H_Hat_tan","H_Hat_Safari_sand_F","H_Hat_Safari_olive_F",
+"H_HeadBandage_clean_F","vn_b_boonie_02_01","vn_b_boonie_02_03","vn_b_boonie_02_06","vn_b_boonie_01_01","vn_b_boonie_01_03","vn_b_boonie_01_04","vn_b_boonie_01_06","vn_b_boonie_03_01","vn_b_boonie_03_03",
+"vn_b_boonie_03_04","vn_b_boonie_04_01","vn_b_boonie_04_04","vn_b_boonie_04_06","vn_b_boonie_05_01","vn_b_boonie_05_03","vn_b_boonie_05_06","vn_b_bandana_01","vn_b_bandana_03","vn_b_bandana_06","vn_b_headband_01",
+"vn_b_headband_03","vn_b_headband_04","vn_b_headband_05","vn_b_beret_01_01","vn_b_beret_01_02","vn_b_beret_01_04","vn_b_beret_01_05","vn_c_headband_01","vn_c_headband_03","vn_c_headband_04","gm_gc_army_headgear_hat_80_grn",
+"gm_gc_bgs_headgear_hat_80_gry","gm_ge_headgear_beret_mrb","gm_ge_headgear_beret_red_engineer","gm_ge_headgear_hat_80_oli","gm_ge_headgear_hat_80_gry","G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
+"G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","gm_ge_backpack_satchel_80_blk","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
+"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02"]] call _fnc_saveToTemplate;
 
-private _initialRebelEquipment = [
-"vn_p38s", "vn_mc10", "vn_fkb1",
-"vn_m38", "vn_izh54", "vn_izh54_shorty",
-"vn_m_mk2_knife_01","vn_m_axe_01","vn_b_type56","vn_b_sks","vn_b_m38","vn_b_camo_m9130","vn_b_camo_m40a1","vn_b_camo_m14",
-"vn_m127", "vn_mc10_mag", "vn_mc10_t_mag",
-"vn_m10_mag","vn_m38_t_mag","vn_m38_mag","vn_rdg2_mag","vn_molotov_grenade_mag","vn_m127_mag","vn_mine_punji_03_mag",
-"vn_izh54_mag",
-"B_FieldPack_khk",
-"vn_o_vest_05","vn_b_vest_usarmy_01",
-"vn_m19_binocs_grey","vn_mx991","vn_mx991_red"
-];
+private _initialRebelEquipment = ["vn_izh54","vn_izh54_shorty","sgun_HunterShotgun_01_F","sgun_HunterShotgun_01_sawedoff_F",				//DONE
+"vn_m1891","vn_m1891_bayo","vn_m9130","vn_m9130_bayo","vn_welrod","vn_welrod_mag","vn_fkb1_pm","vn_fkb1","vn_m1895","vn_m10","vn_p38s","gm_lp1_blk", "G_Squares_Tinted","G_Aviator",
+"vn_izh54_mag","vn_izh54_so_mag","2Rnd_12Gauge_Pellets","2Rnd_12Gauge_Slug","vn_pm_mag","vn_m1895_mag","vn_m10_mag","gm_1Rnd_265mm_flare_single_wht_DM15","gm_1Rnd_265mm_flare_multi_wht_DM25","vn_b_item_watch","gm_photocamera_01_blk","H_Bandanna_cbr","H_Bandanna_sgg","H_Shemag_olive",
+"H_Booniehat_oli","H_Cap_red","H_Cap_blu","H_Cap_oli","H_Cap_tan","H_Cap_blk","H_Cap_grn",
+"H_ShemagOpen_khk","H_ShemagOpen_tan","H_StrawHat","H_StrawHat_dark","H_Hat_blue","H_Hat_brown","H_Hat_camo","H_Hat_grey","H_Hat_checker","H_Hat_tan","H_Hat_Safari_sand_F","H_Hat_Safari_olive_F",
+"H_HeadBandage_clean_F","vn_b_boonie_02_01","vn_b_boonie_02_03","vn_b_boonie_02_06","vn_b_boonie_01_01","vn_b_boonie_01_03","vn_b_boonie_01_04","vn_b_boonie_01_06","vn_b_boonie_03_01","vn_b_boonie_03_03",
+"vn_b_boonie_03_04","vn_b_boonie_04_01","vn_b_boonie_04_04","vn_b_boonie_04_06","vn_b_boonie_05_01","vn_b_boonie_05_03","vn_b_boonie_05_06","vn_b_bandana_01","vn_b_bandana_03","vn_b_bandana_06","vn_b_headband_01",
+"vn_b_headband_03","vn_b_headband_04","vn_b_headband_05","vn_b_beret_01_01","vn_b_beret_01_02","vn_b_beret_01_04","vn_b_beret_01_05","vn_c_headband_01","vn_c_headband_03","vn_c_headband_04","gm_gc_army_headgear_hat_80_grn",
+"gm_gc_bgs_headgear_hat_80_gry","gm_ge_headgear_beret_mrb","gm_ge_headgear_beret_red_engineer","gm_ge_headgear_hat_80_oli","gm_ge_headgear_hat_80_gry","G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
+"G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
+"B_Messenger_Coyote_F","B_Messenger_Olive_F","B_Messenger_Black_F","B_Messenger_Gray_F","B_LegStrapBag_black_F","B_LegStrapBag_olive_F",
+"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02",
+"G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
+"G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
+"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02"];
 
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
@@ -127,26 +131,26 @@ private _initialRebelEquipment = [
 ]] call _fnc_saveToTemplate;
 
 lootCrate = "Box_Syndicate_Ammo_F";
-rallyPoint = "B_RadioBag_01_wdl_F";
+rallyPoint = "gm_ge_backpack_sem35_oli";
 
 //black market stuff
 shop_UAV = [];
-shop_AA = ["vn_o_wheeled_z157_mg_02_nva65"];
-shop_MRAP = [];
-shop_wheel_apc = ["vn_o_wheeled_btr40_mg_01_nva65", "vn_o_wheeled_btr40_mg_02_nva65", "vn_o_wheeled_btr40_mg_03_nva65"];
-shop_track_apc = [];
-shop_heli = ["vn_o_air_mi2_04_03"];
-shop_tank = ["vn_i_armor_type63_01", "vn_i_armor_m41_01"];
-shop_plane = [];
+shop_AA = ["vn_o_wheeled_z157_mg_02_nva65","vn_o_wheeled_btr40_mg_03_vcmf","gm_ge_army_gepard1a1"];
+shop_MRAP = ["vn_o_wheeled_btr40_mg_02_vcmf","vn_o_wheeled_btr40_mg_01_vcmf","vn_o_wheeled_btr40_01_vcmf","gm_gc_army_uaz469_dshkm"];
+shop_wheel_apc = ["gm_ge_army_fuchsa0_reconnaissance","gm_gc_army_brdm2um"];
+shop_track_apc = ["gm_pl_army_brdm2","gm_pl_army_bmp1sp2"];
+shop_heli = ["gm_gc_airforce_mi2us","vn_b_air_uh1d_02_07"];
+shop_tank = ["gm_ge_army_Leopard1a1","gm_pl_army_pt76b","gm_pl_army_t55"];
+shop_plane = ["gm_ge_airforce_do28d2","gm_gc_civ_l410s_salon","vn_b_air_f4c_cas"];
 
-additionalShopLight = [];
-additionalShopAtgmVehicles = [];
+additionalShopLight = ["gm_gc_army_uaz469_cargo","gm_gc_army_p601"];
+additionalShopAtgmVehicles = ["gm_gc_army_uaz469_spg9"];
 additionalShopManpadsVehicles = [];
-additionalShopArtillery = [];
+additionalShopArtillery = ["vn_b_army_static_m101_02"];
 
 //military building models (common for all sides)
-smallBunker = "Land_BagBunker_Small_F";
-sandbag = "Land_BagFence_Long_F";
+smallBunker = "Land_vn_bunker_small_01";							
+sandbag = "Land_vn_bagfence_long_f";
 
 //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
@@ -189,17 +193,7 @@ _loadoutData setVariable ["compasses", ["vn_b_item_compass"]];
 _loadoutData setVariable ["radios", []];
 _loadoutData setVariable ["binoculars", ["vn_m19_binocs_grey"]];
 
-_loadoutData setVariable ["uniforms", [
-    "vn_o_uniform_vc_01_01",
-    "vn_o_uniform_vc_01_02",
-    "vn_o_uniform_vc_02_07",
-    "vn_o_uniform_vc_03_02",
-    "vn_o_uniform_vc_04_02",
-    "vn_o_uniform_vc_05_01",
-    "vn_o_uniform_vc_02_05",
-    "vn_o_uniform_vc_04_03",
-    "vn_o_uniform_vc_03_03"
-]];
+_loadoutData setVariable ["uniforms", ["vn_b_uniform_macv_01_01","vn_b_uniform_macv_02_01","vn_b_uniform_macv_03_01","vn_b_uniform_macv_04_01","vn_b_uniform_macv_05_01","vn_b_uniform_macv_05_06","vn_b_uniform_macv_06_01"]];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["backpacks", []];
 _loadoutData setVariable ["longRangeRadios", []];
