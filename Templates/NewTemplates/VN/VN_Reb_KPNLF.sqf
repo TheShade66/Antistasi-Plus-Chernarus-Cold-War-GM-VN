@@ -4,9 +4,9 @@
 
 ["name", "Panther"] call _fnc_saveToTemplate; 						//this line determines the faction name -- Example: ["name", "NATO"] - ENTER ONLY ONE OPTION
 
-["flag", "gm_flag_GE"] call _fnc_saveToTemplate; 						//this line determines the flag -- Example: ["flag", "Flag_NATO_F"] - ENTER ONLY ONE OPTION
-["flagTexture", "\gm\gm_core\data\flags\gm_flag_GE_co.paa"] call _fnc_saveToTemplate; 				//this line determines the flag texture -- Example: ["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] - ENTER ONLY ONE OPTION
-["flagMarkerType", "flag_Germany"] call _fnc_saveToTemplate; 			//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
+["flag", "Flag_FIA_F"] call _fnc_saveToTemplate; 						
+["flagTexture", "\A3\Data_F\Flags\flag_FIA_CO.paa"] call _fnc_saveToTemplate; 				
+["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate; 				//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
 //////////////////////////
 //  Mission/HQ Objects  //
 //////////////////////////
@@ -102,7 +102,7 @@ private _initialRebelEquipment = ["vn_izh54","vn_izh54_shorty","sgun_HunterShotg
 "gm_gc_bgs_headgear_hat_80_gry","gm_ge_headgear_beret_mrb","gm_ge_headgear_beret_red_engineer","gm_ge_headgear_hat_80_oli","gm_ge_headgear_hat_80_gry","G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
 "G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
 "B_Messenger_Coyote_F","B_Messenger_Olive_F","B_Messenger_Black_F","B_Messenger_Gray_F","B_LegStrapBag_black_F","B_LegStrapBag_olive_F",
-"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02",
+"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02","vn_m38_t_mag",
 "G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
 "G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
 "vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02"];

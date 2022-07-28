@@ -2,12 +2,12 @@
 //   Side Information   //
 //////////////////////////
 
-["name", "MACV"] call _fnc_saveToTemplate;
-["spawnMarkerName", "MACV Support Corridor"] call _fnc_saveToTemplate;
+["name", "NATO"] call _fnc_saveToTemplate;
+["spawnMarkerName", "NATO Support Corridor"] call _fnc_saveToTemplate;
 
-["flag", "vn_flag_usa"] call _fnc_saveToTemplate;
-["flagTexture", "vn\objects_f_vietnam\flags\data\vn_flag_01_usa_co.paa"] call _fnc_saveToTemplate;
-["flagMarkerType", "vn_flag_usa"] call _fnc_saveToTemplate;
+["flag", "Flag_NATO_F"] call _fnc_saveToTemplate; 						
+["flagTexture", "\A3\Data_F\Flags\Flag_NATO_CO.paa"] call _fnc_saveToTemplate; 				
+["flagMarkerType", "flag_NATO"] call _fnc_saveToTemplate; 
 
 
 //////////////////////////////////////
@@ -83,7 +83,7 @@
 //  Mission/HQ Objects  //
 //////////////////////////
 
-["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate;
+["ammobox", "B_supplyCrate_F"] call _fnc_saveToTemplate; //oh oh
 ["surrenderCrate", "vn_o_ammobox_04"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 ["equipmentBox", "Box_NATO_Equip_F"] call _fnc_saveToTemplate; //Changeing this from default will require you to define logistics attachement offset for the box type
 
@@ -99,19 +99,20 @@
 //       Vehicles       //
 //////////////////////////
 
-["vehiclesBasic", ["vn_b_wheeled_m151_01"]] call _fnc_saveToTemplate;
-["vehiclesLightUnarmed", ["vn_b_wheeled_m151_01","vn_b_wheeled_m151_02"]] call _fnc_saveToTemplate;
-["vehiclesLightArmed",["vn_b_wheeled_m151_mg_02","vn_b_wheeled_m151_mg_03","vn_b_wheeled_m151_mg_04","vn_b_wheeled_m151_mg_05"]] call _fnc_saveToTemplate;
-["vehiclesTrucks", ["vn_b_wheeled_m54_01","vn_b_wheeled_m54_02"]] call _fnc_saveToTemplate;
-["vehiclesCargoTrucks", []] call _fnc_saveToTemplate;
-["vehiclesAmmoTrucks", ["vn_b_wheeled_m54_ammo"]] call _fnc_saveToTemplate;
-["vehiclesRepairTrucks", ["vn_b_wheeled_m54_repair"]] call _fnc_saveToTemplate;
-["vehiclesFuelTrucks", ["vn_b_wheeled_m54_fuel"]] call _fnc_saveToTemplate;
-["vehiclesMedical", ["vn_b_wheeled_m54_02_sog"]] call _fnc_saveToTemplate;
-["vehiclesAPCs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;
-["vehiclesTanks", ["vn_b_armor_m41_01_02"]] call _fnc_saveToTemplate;
-["vehiclesAA", ["vn_b_wheeled_m54_mg_02"]] call _fnc_saveToTemplate;
-["vehiclesLightAPCs", []] call _fnc_saveToTemplate;			//this line determines light APCs
+["vehiclesBasic", ["vn_b_wheeled_m151_01","gm_ge_army_k125"]] call _fnc_saveToTemplate;
+["vehiclesLightUnarmed", ["gm_ge_army_iltis_cargo","vn_b_wheeled_m151_01","vn_b_wheeled_m151_02"]] call _fnc_saveToTemplate;
+["vehiclesLightArmed",["vn_o_wheeled_btr40_mg_02_nva65","gm_ge_army_iltis_mg3","gm_ge_army_u1300l_cargo","gm_dk_army_u1300l_container","vn_b_wheeled_m151_mg_04","vn_b_wheeled_m151_mg_03","vn_b_wheeled_m151_mg_02","gm_ge_army_iltis_milan"]] call _fnc_saveToTemplate;
+["vehiclesTrucks", ["gm_ge_army_u1300l_cargo","gm_ge_army_kat1_451_cargo","vn_b_wheeled_m54_01","vn_b_wheeled_m54_02"]] call _fnc_saveToTemplate;
+["vehiclesCargoTrucks", ["gm_ge_army_u1300l_container","gm_ge_army_kat1_451_container","gm_ge_army_kat1_452_container"]] call _fnc_saveToTemplate;
+["vehiclesAmmoTrucks", ["vn_b_wheeled_m54_ammo","gm_ge_army_kat1_451_reammo"]] call _fnc_saveToTemplate;
+["vehiclesRepairTrucks", ["vn_b_wheeled_m54_repair","gm_ge_army_u1300l_repair"]] call _fnc_saveToTemplate;
+["vehiclesFuelTrucks", ["vn_b_wheeled_m54_fuel","gm_ge_army_kat1_451_refuel"]] call _fnc_saveToTemplate;
+["vehiclesMedical", ["gm_ge_army_u1300l_medic","gm_ge_army_m113a1g_medic"]] call _fnc_saveToTemplate;
+["vehiclesAPCs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01","gm_ge_army_m113a1g_apc","gm_ge_army_m113a1g_apc_milan","gm_ge_army_m113a1g_command","gm_ge_army_luchsa1","gm_ge_army_luchsa2","gm_ge_army_marder1a1plus","gm_ge_army_marder1a1a",
+"gm_ge_army_marder1a2","gm_ge_army_fuchsa0_command","gm_ge_army_fuchsa0_engineer","gm_dk_army_m113a2dk","gm_ge_army_fuchsa0_reconnaissance"]] call _fnc_saveToTemplate; // might define roadblock vehicles
+["vehiclesTanks", ["gm_ge_army_Leopard1a1","gm_ge_army_Leopard1a1a1","gm_ge_army_Leopard1a1a2","gm_ge_army_Leopard1a3","gm_ge_army_Leopard1a3a1","gm_ge_army_Leopard1a5","gm_dk_army_Leopard1a3"]] call _fnc_saveToTemplate;
+["vehiclesAA", ["vn_b_wheeled_m54_mg_02","gm_ge_army_gepard1a1"]] call _fnc_saveToTemplate;
+["vehiclesLightAPCs", ["gm_ge_army_fuchsa0_command","vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;			//this line determines light APCs
 ["vehiclesIFVs", []] call _fnc_saveToTemplate;				//this line determines IFVs
 
 ["vehiclesSam", ["",""]] call _fnc_saveToTemplate; 	//this line determines SAM systems, order: radar, SAM
@@ -124,27 +125,29 @@
 ["vehiclesPlanesAA", ["vn_b_air_f4c_cap"]] call _fnc_saveToTemplate;
 ["vehiclesPlanesTransport", []] call _fnc_saveToTemplate;
 
-["vehiclesHelisLight", ["vn_b_air_ch34_01_01"]] call _fnc_saveToTemplate;
-["vehiclesHelisTransport", ["vn_b_air_uh1c_07_01","vn_b_air_uh1d_02_01", "vn_b_air_ch34_01_01","vn_b_air_ch34_03_01"]] call _fnc_saveToTemplate;
+["vehiclesHelisLight", ["vn_b_air_oh6a_02","vn_b_air_uh1d_02_02","gm_ge_army_bo105m_vbh","gm_ge_army_bo105p1m_vbh"]] call _fnc_saveToTemplate;
+["vehiclesHelisTransport", ["vn_b_air_uh1c_07_01","vn_b_air_uh1d_02_01", "vn_b_air_ch34_01_01","vn_b_air_ch34_03_01","gm_ge_army_ch53gs","vn_b_air_uh1d_02_02"]] call _fnc_saveToTemplate;
 ["vehiclesHelisAttack", ["vn_b_air_ah1g_02","vn_b_air_ah1g_03","vn_b_air_ah1g_04","vn_b_air_uh1c_01_01","vn_b_air_uh1c_02_01", "vn_b_air_uh1c_03_01"]] call _fnc_saveToTemplate;
 
 ["vehiclesArtillery", [
 ["vn_b_army_static_m101_02", ["vn_cannon_m101_mag_he_x8"]],
 ["vn_b_army_static_m101_02", ["vn_cannon_m101_mag_ab_x8"]],	//Airburst
-["vn_b_army_static_m101_02", ["vn_cannon_m101_mag_wp_x8"]]
+["vn_b_army_static_m101_02", ["vn_cannon_m101_mag_wp_x8"]],
+["gm_ge_army_kat1_463_mlrs", ["gm_36Rnd_mlrs_110mm_he_dm21"]],
+["gm_ge_army_m109g", ["gm_20Rnd_155mm_he_dm21"]]
 ]] call _fnc_saveToTemplate;
 
 ["uavsAttack", ["not_supported"]] call _fnc_saveToTemplate;
 ["uavsPortable", ["not_supported"]] call _fnc_saveToTemplate;
 
 //Config special vehicles
-["vehiclesMilitiaLightArmed", ["vn_i_wheeled_m151_mg_01_mp"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTrucks", ["vn_b_wheeled_m54_02_sog"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaCars", ["vn_i_wheeled_m151_01_mp"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaTanks", ["vn_b_armor_m41_01_02"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaLightArmed", ["vn_i_wheeled_m151_mg_01_mp","gm_ge_army_iltis_mg3"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTrucks", ["gm_ge_army_u1300l_cargo", "gm_ge_army_kat1_451_cargo"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaCars", ["gm_ge_army_iltis_cargo"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01","gm_ge_army_iltis_mg3"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaTanks", ["gm_ge_army_Leopard1a1"]] call _fnc_saveToTemplate;
 
-["vehiclesPolice", ["vn_b_wheeled_m151_02_mp", "vn_b_wheeled_m151_01_mp"]] call _fnc_saveToTemplate;
+["vehiclesPolice", ["vn_b_wheeled_m151_02_mp", "gm_ge_army_iltis_cargo"]] call _fnc_saveToTemplate;
 
 ["staticMGs", ["vn_b_army_static_m1919a4_high", "vn_b_army_static_m2_high", "vn_b_army_static_m60_high"]] call _fnc_saveToTemplate;
 ["staticAT", ["vn_b_army_static_tow"]] call _fnc_saveToTemplate;
@@ -186,7 +189,7 @@
 	]
 ] call _fnc_saveToTemplate;
 
-["pvpVehicles", ["vn_b_wheeled_m151_01", "vn_b_wheeled_m151_mg_02"]] call _fnc_saveToTemplate;
+["pvpVehicles", ["vn_b_wheeled_m151_01", "vn_b_wheeled_m151_mg_02","gm_ge_army_iltis_mg3"]] call _fnc_saveToTemplate;
 
 
 
@@ -267,7 +270,7 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
 ///////////////////////////////////////
-//    Special Forces Loadout Data    //
+//    Special Forces Loadout Data    // TO DO
 ///////////////////////////////////////
 
 private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData;
@@ -336,7 +339,7 @@ _sfLoadoutData setVariable ["sidearms", [
 ["vn_mk22", "vn_s_mk22", "", "", [], [], ""]
 ]];
 /////////////////////////////////
-//    Military Loadout Data    //
+//    Military Loadout Data    // TO DO
 /////////////////////////////////
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData;
@@ -416,7 +419,7 @@ _militaryLoadoutData setVariable ["sidearms", [
 ]];
 
 /////////////////////////////////
-//    Elite Loadout Data    //
+//    Elite Loadout Data    //		TO DO
 /////////////////////////////////
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 _eliteLoadoutData setVariable ["uniforms", ["vn_b_uniform_sog_02_02", "vn_b_uniform_sog_02_05", "vn_b_uniform_macv_06_02", "vn_b_uniform_macv_04_02"]];
@@ -489,18 +492,20 @@ _eliteLoadoutData setVariable ["sidearms", [
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
 
-_policeLoadoutData setVariable ["uniforms", ["vn_b_uniform_macv_01_03"]];
-_policeLoadoutData setVariable ["vests", ["vn_b_vest_usarmy_10"]];
-_policeLoadoutData setVariable ["helmets", ["vn_b_helmet_m1_01_02","vn_b_boonie_02_01"]];
+_policeLoadoutData setVariable ["uniforms", ["gm_ge_pol_uniform_blouse_80_blk"]];
+_policeLoadoutData setVariable ["vests", ["gm_ge_pol_vest_80_wht"]];
+_policeLoadoutData setVariable ["helmets", ["gm_gc_pol_headgear_cap_80_blu"]];
 
 _policeLoadoutData setVariable ["rifles", [
 ["vn_m1a1_tommy", "", "", "", ["vn_m1a1_20_mag", "vn_m1a1_20_mag", "vn_m1a1_20_t_mag"], [], ""],
 ["vn_m1carbine", "", "", "", ["vn_carbine_15_mag", "vn_carbine_15_mag", "vn_carbine_15_t_mag"], [], ""],
-["vn_m1897", "", "", "", ["vn_m1897_buck_mag", "vn_m1897_fl_mag"], [], ""]
+["vn_mp40", "", "", "", ["vn_mp40_mag", "vn_mp40_mag", "vn_mp40_mag"], [], ""],
+["gm_mp5a2_blk", "", "", "", ["gm_30Rnd_9x19mm_B_DM51_mp5_blk", "gm_30Rnd_9x19mm_B_DM51_mp5_blk", "gm_30Rnd_9x19mm_B_DM51_mp5_blk"], [], ""],
+["gm_m16a1_blk", "", "", "", ["gm_20Rnd_556x45mm_B_T_M196_stanag_gry", "gm_20Rnd_556x45mm_B_T_M196_stanag_gry", "gm_20Rnd_556x45mm_B_T_M196_stanag_gry"], [], ""]
 ]];
 _policeLoadoutData setVariable ["sidearms", [
-"vn_m1911",
-"vn_mx991_m1911"
+["gm_p1_blk", "", "", "", ["gm_8Rnd_9x19mm_B_DM11_p1_blk"], [], ""],
+["vn_m1911", "", "", "", ["vn_m1911_mag", "vn_m1911_mag"], [], ""]
 ]];
 
 ////////////////////////////////
