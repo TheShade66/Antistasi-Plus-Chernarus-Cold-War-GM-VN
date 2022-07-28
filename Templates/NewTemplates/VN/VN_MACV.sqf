@@ -487,7 +487,7 @@ _eliteLoadoutData setVariable ["sidearms", [
 ]];
 
 ///////////////////////////////
-//    Police Loadout Data    //
+//    Police Loadout Data    //		//OLDSCHOOL
 ///////////////////////////////
 
 private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData;
@@ -509,7 +509,7 @@ _policeLoadoutData setVariable ["sidearms", [
 ]];
 
 ////////////////////////////////
-//    Militia Loadout Data    //
+//    Militia Loadout Data    //		//LOCAL FORCE
 ////////////////////////////////
 
 private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;

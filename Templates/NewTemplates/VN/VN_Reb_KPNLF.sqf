@@ -4,9 +4,9 @@
 
 ["name", "Panther"] call _fnc_saveToTemplate; 						//this line determines the faction name -- Example: ["name", "NATO"] - ENTER ONLY ONE OPTION
 
-["flag", "Flag_FIA_F"] call _fnc_saveToTemplate; 						
-["flagTexture", "\A3\Data_F\Flags\flag_FIA_CO.paa"] call _fnc_saveToTemplate; 				
-["flagMarkerType", "flag_FIA"] call _fnc_saveToTemplate; 				//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
+["flag", "Flag_EAF_F"] call _fnc_saveToTemplate; 						
+["flagTexture", "a3\Data_F_Enoch\Flags\flag_EAF_CO.paa"] call _fnc_saveToTemplate; 				
+["flagMarkerType", "flag_EAF"] call _fnc_saveToTemplate; 				//this line determines the flag marker type -- Example: ["flagMarkerType", "flag_NATO"] - ENTER ONLY ONE OPTION
 //////////////////////////
 //  Mission/HQ Objects  //
 //////////////////////////
