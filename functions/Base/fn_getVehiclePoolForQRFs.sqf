@@ -1,5 +1,7 @@
 /*  Returns a weighted and balanced vehicle pool for the given side and filter
 
+// TO DO can edit how quickly stronger units are called in.
+
     Execution on: All
 
     Scope: External

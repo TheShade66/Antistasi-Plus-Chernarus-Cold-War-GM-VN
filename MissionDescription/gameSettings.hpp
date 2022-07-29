@@ -1,5 +1,7 @@
+//TheNightBird edit
+
 respawn = "BASE";
-respawnDelay = 15;
+respawnDelay = 7;
 
 aiKills = 0;
 disabledAI = 1;

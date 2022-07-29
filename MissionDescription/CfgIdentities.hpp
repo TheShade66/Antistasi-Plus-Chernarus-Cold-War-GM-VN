@@ -1,3 +1,5 @@
+// TO DO? can fix to better names
+
 class CfgIdentities
 {
   class protagonista

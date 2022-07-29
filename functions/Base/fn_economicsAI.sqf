@@ -1,5 +1,6 @@
 //Original Author: Barbolani
 //Edited and updated by the Antstasi Community Development Team
+// TO DO could be used to set difficulty?
 
 params [["_timeInHours", 1/6], ["_occScale", 1], ["_invScale", 1.2]];
 

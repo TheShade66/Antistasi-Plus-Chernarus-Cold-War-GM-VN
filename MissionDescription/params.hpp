@@ -1,6 +1,7 @@
 // Real defaults are set in functions/init/fn_initParams.sqf and should match the descriptions below
 // 9999 is a special value that causes that parameter to be loaded from the last save, if any
 // 9998 is a reserved value and should not be used
+// TheNightBird edit
 
 class Params
 {
