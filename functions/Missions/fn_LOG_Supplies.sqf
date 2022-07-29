@@ -72,7 +72,7 @@ private _typeGroup = if (random 10 < tierWar) then {
 //preventing spawned units from killing garrison on friendly city
 if (_isEnemyMarker) then {
 	private _groupX = [_positionX,_side, _typeGroup] call A3A_fnc_spawnGroup;
-	_nul = [leader _groupX, _mrk, "SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] execVM "scripts\UPSMON.sqf";
+	_nul = [leader _groupX, _mrk, "LIMITED","SAFE","SPAWNED", "NOVEH2", "NOFOLLOW"] execVM "scripts\UPSMON.sqf";
 	{[_x,""] call A3A_fnc_NATOinit} forEach units _groupX;
 
 	_groups pushBack _groupX;

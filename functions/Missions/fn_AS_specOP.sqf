@@ -20,7 +20,7 @@ private _taskId = "AS" + str A3A_taskCount;
 
 _specOps = if(_sideX == Occupants) then { NATOSpecOp } else { CSATSpecOp };
 _groupX = [_positionX, _sideX, _specOps] call A3A_fnc_spawnGroup;
-_nul = [leader _groupX, _markerX, "SAFE","SPAWNED","RANDOM","NOVEH2","NOFOLLOW"] execVM "scripts\UPSMON.sqf";
+_nul = [leader _groupX, _markerX, "LIMITED","SAFE","SPAWNED","RANDOM","NOVEH2","NOFOLLOW"] execVM "scripts\UPSMON.sqf";
 [2, format ["SpecOps Group Array: %1, Group: %2", str _specOps, str _groupX], "fn_AS_specOP"] call A3A_fnc_log;
 
 
