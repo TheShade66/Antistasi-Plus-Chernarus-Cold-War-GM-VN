@@ -105,7 +105,7 @@ private _initialRebelEquipment = ["vn_izh54","vn_izh54_shorty","sgun_HunterShotg
 "vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02","vn_m38_t_mag","gm_ge_backpack_satchel_80_blk",
 "G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
 "G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
-"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02"];
+"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02","vn_b_m38"];
 
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
