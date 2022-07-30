@@ -95,9 +95,11 @@ construction_cost = 0;
 construction_buildTime = 0;
 construction_type = _constructionType;
 
+// TheNightBird edit
+
 switch(_constructionType) do {
     case("TRENCH"): {
-        construction_buildingsAvailable = ["Land_SandbagBarricade_01_half_F", "Land_SandbagBarricade_01_F", "Land_BasaltKerb_01_pile_F", "Land_SandbagBarricade_01_hole_F", "Land_BagFence_01_long_green_F", "Land_BagFence_Round_F", "Land_BagFence_Long_F", "Land_BagFence_01_round_green_F"];
+        construction_buildingsAvailable = ["Land_vn_fence_wooden_01_05","Land_FirewoodPile_01_F","Land_SandbagBarricade_01_half_F","Land_BagFence_01_long_green_F","Land_BagFence_01_round_green_F","Land_BagFence_01_corner_green_F", "Land_SandbagBarricade_01_F", "Land_BasaltKerb_01_pile_F", "Land_SandbagBarricade_01_hole_F", "Land_BagFence_01_long_green_F", "Land_BagFence_Round_F", "Land_BagFence_Long_F", "Land_BagFence_01_round_green_F"];
         construction_cost = 50;
         construction_buildTime = 30;
     };
@@ -107,7 +109,7 @@ switch(_constructionType) do {
         construction_buildTime = 25;
     };
     case("SANDBAG_BUNKER"): {
-        construction_buildingsAvailable = ["Land_BagBunker_01_small_green_F", "Fort_Nest", "Land_BagBunker_Large_F"];
+        construction_buildingsAvailable = ["Land_BagBunker_01_small_green_F", "Fort_Nest", "Land_BagBunker_Large_F","Land_BagBunker_Tower_F"];
         construction_cost = 250;
         construction_buildTime = 60;
     };
@@ -117,7 +119,7 @@ switch(_constructionType) do {
         construction_buildTime = 90;
     };
     case("MISC"): {
-        construction_buildingsAvailable = ["CamoNet_BLUFOR_F", "CamoNet_BLUFOR_open_F", "CamoNet_BLUFOR_big_F", "Land_CanvasCover_02_F", "Land_CanvasCover_01_F", "Land_LampShabby_F"];
+        construction_buildingsAvailable = ["gm_gc_tent_5x5m","CamoNet_BLUFOR_F", "CamoNet_BLUFOR_open_F", "CamoNet_BLUFOR_big_F", "Land_CanvasCover_02_F", "Land_CanvasCover_01_F", "Land_LampShabby_F","Land_Camping_Light_F","Land_WoodenLog_F","Campfire_burning_F","Land_WoodenTable_02_large_F","Land_ClothShelter_01_F","Land_TentA_F"];
         construction_cost = 10;
         construction_buildTime = 20;
     };
