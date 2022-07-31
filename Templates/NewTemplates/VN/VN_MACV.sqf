@@ -541,7 +541,7 @@ _militiaLoadoutData setVariable ["grenadeLaunchers", [
 ["vn_m1_garand_gl", "", "", "", ["vn_m1_garand_t_mag", "vn_m1_garand_t_mag", "vn_m1_garand_t_mag"], ["vn_22mm_m1a2_frag_mag", "vn_22mm_m1a2_frag_mag", "vn_22mm_m9_heat_mag", "vn_22mm_lume_mag", "vn_22mm_m22_smoke_mag"], ""]
 ]];
 _militiaLoadoutData setVariable ["machineGuns", [
-["vn_m1918", "", "", "", ["vn_type56_t_mag","vn_type56_t_mag","vn_type56_t_mag","vn_type56_t_mag","vn_type56_t_mag","vn_type56_t_mag"], ["vn_type56_t_mag","vn_type56_t_mag"], ""]
+["vn_m1918", "", "", "", ["vn_m1918_t_mag","vn_m1918_t_mag","vn_m1918_t_mag","vn_m1918_t_mag","vn_m1918_t_mag","vn_m1918_t_mag"], ["vn_m1918_t_mag","vn_m1918_t_mag"], ""]
 ]];
 _militiaLoadoutData setVariable ["marksmanRifles", [
 ["vn_vz54", "", "", "vn_o_3x_vz54", ["vn_m38_t_mag", "vn_m38_t_mag", "vn_m38_t_mag"], [], ""],

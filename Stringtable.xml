@@ -2238,7 +2238,7 @@
       </Key>
       <Key ID="STR_antistasi_mission_info_chernarus2020_mapname_short_text">
         <Original>Antistasi Plus - Cold War</Original>
-        <English>Antistasi Plus - Cold Wa</English>
+        <English>Antistasi Plus - Cold War</English>
         <French>Antistasi Plus - Bleu récolte</French>
         <German>Antistasi Plus - Ernte blau</German>
         <Chinesesimp>Antistasi Plus - 蓝色收获</Chinesesimp>
@@ -2246,8 +2246,8 @@
         <Czech>Antistasi Plus - Harvest Blue</Czech>
       </Key>
       <Key ID="STR_antistasi_mission_info_chernarus2020_blurb_text">
-        <Original>Bardak is out there.</Original>
-        <English>Bardak is out there.</English>
+        <Original>The forests hide many a secret.</Original>
+        <English>The forests hide many a secret.</English>
         <German>Bardak ist da draußen.</German>
         <French>Bardak est là-bas.</French>
         <Chinesesimp>Bardak 就在外面。</Chinesesimp>

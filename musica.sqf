@@ -40,7 +40,7 @@ if (isNil "EHMusic") then
 						};
 					};
 				};
-			_played = selectRandom ([1,2,3]);
+			_played = selectRandom ([1,2]);
 			if (_played == 1) then
 				{
 				1 fadeMusic 0.5;

@@ -55,7 +55,7 @@ if (_markerX != "Synd_HQ") then
 					};
 				};
 				//_nul = [_markerX,_civs] spawn destroyCheck;
-				_nul = [leader _groupCiv, _markerX, "SAFE", "SPAWNED","NOFOLLOW", "NOSHARE","DORELAX","NOVEH2"] execVM "scripts\UPSMON.sqf";//TODO need delete UPSMON link
+				_nul = [leader _groupCiv, _markerX, "LIMITED","SAFE", "SPAWNED","NOFOLLOW", "NOSHARE","DORELAX","NOVEH2"] execVM "scripts\UPSMON.sqf";//TODO need delete UPSMON link
 			};
 		};
 	};
@@ -151,11 +151,11 @@ for "_i" from 0 to (count _groups) - 1 do
 	_groupX = _groups select _i;
 	if (_i == 0) then
 	{
-		_nul = [leader _groupX, _markerX, "SAFE","SPAWNED","RANDOMUP","NOVEH2","NOFOLLOW"] execVM "scripts\UPSMON.sqf";//TODO need delete UPSMON link
+		_nul = [leader _groupX, _markerX, "LIMITED","SAFE","SPAWNED","RANDOMUP","NOVEH2","NOFOLLOW"] execVM "scripts\UPSMON.sqf";//TODO need delete UPSMON link
 	}
 	else
 	{
-		_nul = [leader _groupX, _markerX, "SAFE","SPAWNED","RANDOM","NOVEH2","NOFOLLOW"] execVM "scripts\UPSMON.sqf";//TODO need delete UPSMON link
+		_nul = [leader _groupX, _markerX, "LIMITED","SAFE","SPAWNED","RANDOM","NOVEH2","NOFOLLOW"] execVM "scripts\UPSMON.sqf";//TODO need delete UPSMON link
 	};
 };
 waitUntil {sleep 1; (spawner getVariable _markerX == 2)};
