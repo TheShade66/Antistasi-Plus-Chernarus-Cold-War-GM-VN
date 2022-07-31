@@ -101,14 +101,14 @@
 ["vehiclesCivCar", [
     "vn_c_wheeled_m151_02", 1.8
     ,"vn_c_wheeled_m151_01", 1.8
-    ,"vn_c_car_02_01", 1.5
-    ,"vn_c_car_03_01", 1
-    ,"vn_c_car_01_01", 0.8
+    ,"vn_c_car_02_01", 1.8
+    ,"vn_c_car_03_01", 1.8
+    ,"vn_c_car_01_01", 1.8
     ,"vn_c_bicycle_01", 0.2
     ,"vn_c_car_04_01", 0.2 
-    ,"gm_ge_civ_typ1200", 2.0
+    ,"gm_ge_civ_typ1200", 1.0
 	,"gm_gc_civ_p601", 2.0
-	,"gm_ge_civ_u1300l", 1.5
+	,"gm_ge_civ_u1300l", 1.0
 	,"gm_gc_civ_ural375d_cargo", 1.3
 	,"gm_gc_ff_p601", 0.2
 	,"gm_gc_dp_p601", 0.2
