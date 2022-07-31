@@ -65,7 +65,7 @@ if (isNil "EHMusic") then
 			else
 				{
 				2 fadeMusic 0;
-				playmusic "";
+				playmusic _song;
 				};
 			};
 		}];
