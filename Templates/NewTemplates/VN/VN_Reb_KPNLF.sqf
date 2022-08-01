@@ -113,21 +113,21 @@ private _initialRebelEquipment = ["vn_izh54","vn_izh54_shorty","sgun_HunterShotg
 //       Antistasi Plus Stuff       //
 //////////////////////////////////////
 ["baseSoldiers", [ // Cases matter. Lower case here because allVariables on namespace returns lowercase
-	["militia_unarmed", "vn_b_men_army_02"],
-	["militia_rifleman", "vn_b_men_army_15"],
-	["militia_staticcrew", "vn_b_men_army_15"],
-	["militia_medic", "vn_b_men_army_03"],
-	["militia_sniper", "vn_b_men_army_11"],
-	["militia_marksman", "vn_b_men_army_10"],
-	["militia_lat", "vn_b_men_army_12"],
-	["militia_machinegunner", "vn_b_men_army_06"],
-	["militia_explosivesexpert", "vn_b_men_army_05"],
-	["militia_grenadier", "vn_b_men_army_07"],
-	["militia_squadleader", "vn_b_men_army_02"],
-	["militia_engineer", "vn_b_men_army_04"],
-	["militia_at", "vn_b_men_army_12"],
-	["militia_aa", "vn_b_men_army_15"],
-	["militia_petros", "vn_b_men_army_11"]
+	["militia_unarmed", "I_G_Survivor_F"],
+	["militia_rifleman", "I_G_Soldier_F"],
+	["militia_staticcrew", "I_G_Soldier_F"],
+	["militia_medic", "I_G_medic_F"],
+	["militia_sniper", "I_G_Sharpshooter_F"],
+	["militia_marksman", "I_G_Soldier_M_F"],
+	["militia_lat", "I_G_Soldier_LAT_F"],
+	["militia_machinegunner", "I_G_Soldier_AR_F"],
+	["militia_explosivesexpert", "I_G_Soldier_exp_F"],
+	["militia_grenadier", "I_G_Soldier_GL_F"],
+	["militia_squadleader", "I_G_Soldier_SL_F"],
+	["militia_engineer", "I_G_engineer_F"],
+	["militia_at", "I_Soldier_AT_F"],
+	["militia_aa", "I_Soldier_AA_F"],
+	["militia_petros", "I_G_officer_F"]
 ]] call _fnc_saveToTemplate;
 
 lootCrate = "Box_Syndicate_Ammo_F";
