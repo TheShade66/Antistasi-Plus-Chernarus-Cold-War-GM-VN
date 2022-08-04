@@ -14,7 +14,7 @@ private _filename = "detector.sqf";
 
 A3A_hasRHS = false;
 A3A_has3CBFactions = false;
-A3A_hasVN = false;
+A3A_hasVN = false;  //this
 A3A_hasUR = false;
 A3A_hasIvory = false;
 A3A_hasTCGM = false;
@@ -23,7 +23,7 @@ A3A_hasD3S = false;
 A3A_hasRDS = false;
 A3A_hasCup = false;
 A3A_hasAegis = false;
-A3A_hasGlobMob = false;
+A3A_hasGlobMob = false;  //this
 A3A_hasGlobMobAaf = false;
 
 //Aegis submods
@@ -62,12 +62,6 @@ if (A3A_hasVN && {isClass (configFile >> "CfgPatches" >> "uns_main")}) then {
   [2,"Unsung Redux Detected.",_fileName] call A3A_fnc_log;
 };
 
-//3CB Factions Detection
-if (isClass (configfile >> "CfgPatches" >> "UK3CB_Factions_Vehicles_SUV")) then {
-  A3A_has3CBFactions = true;
-  [2,"3CB Factions Detected.",_fileName] call A3A_fnc_log;
-};
-
 if (isClass (configfile >> "CfgPatches" >> "gm_core")) then {
   A3A_hasGlobMob = true;
   [2,"Global Mobilization Detected.",_fileName] call A3A_fnc_log;
@@ -77,6 +71,14 @@ if (A3A_hasGlobMob && {isClass (configfile >> "CfgVehicles" >> "gmx_aaf_leopard1
   A3A_hasGlobMobAaf = true;
   [2,"GM AAF Detected.",_fileName] call A3A_fnc_log;
 };
+
+//3CB Factions Detection
+if (isClass (configfile >> "CfgPatches" >> "UK3CB_Factions_Vehicles_SUV")) then {
+  A3A_has3CBFactions = true;
+  [2,"3CB Factions Detected.",_fileName] call A3A_fnc_log;
+};
+
+
 
 //FFAA Detection
 if (isClass (configfile >> "CfgPatches" >> "ffaa_armas")) then {

@@ -95,7 +95,12 @@ A3A_Reb_template = switch(true) do {
         [2, "Using Unsung KPNLF Template", _filename] call A3A_fnc_log;
         "VN"
     };
-    case (A3A_hasVN): {
+    case (A3A_hasVN && {A3A_hasGlobMob}): {  //TheNightBird edit
+        ["Templates\NewTemplates\VN_GM\VN_GM_Panther.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Panther Template", _filename] call A3A_fnc_log;
+        "VN+GM"
+    };
+        case (A3A_hasVN): {
         ["Templates\NewTemplates\VN\VN_Reb_KPNLF.sqf", independent] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using KPNLF Template", _filename] call A3A_fnc_log;
         "VN"
@@ -247,6 +252,11 @@ A3A_Occ_template = switch(true) do {
         [2, "Using Unsung VN MACV Template", _filename] call A3A_fnc_log;
         "VN"
     };
+        case (A3A_hasVN && {A3A_hasGlobMob}): {  //TheNightBird edit
+        ["Templates\NewTemplates\VN_GM\VN_GM_NATO.sqf", west] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Panther Template", _filename] call A3A_fnc_log;
+        "VN+GM"
+    };
     case (A3A_hasVN): {
         ["Templates\NewTemplates\VN\VN_MACV.sqf", west] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using VN MACV Template", _filename] call A3A_fnc_log;
@@ -334,6 +344,11 @@ A3A_Inv_template = switch(true) do{
         ["Templates\NewTemplates\VN_UR\VN_UR_PAVN.sqf", east] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using Unsung VN PAVN Template", _filename] call A3A_fnc_log;
         "VN"
+    };
+    case (A3A_hasVN && {A3A_hasGlobMob}): {  //TheNightBird edit
+        ["Templates\NewTemplates\VN_GM\VN_GM_Warsaw.sqf", east] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Panther Template", _filename] call A3A_fnc_log;
+        "VN+GM"
     };
     case (A3A_hasVN): {
         ["Templates\NewTemplates\VN\VN_PAVN.sqf", east] call A3A_fnc_compatibilityLoadFaction;
@@ -425,6 +440,11 @@ A3A_Civ_template = switch(true) do {
         [2, "Using RHS Civ Template", _filename] call A3A_fnc_log;
         "RHS"
     };
+    case (A3A_hasVN && {A3A_hasGlobMob}): {  //TheNightBird edit
+        ["Templates\NewTemplates\VN_GM\VN_GM_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
+        [2, "Using Panther Template", _filename] call A3A_fnc_log;
+        "VN+GM"
+    };
     case (A3A_hasVN): {
         ["Templates\NewTemplates\VN\VN_CIV.sqf", civilian] call A3A_fnc_compatibilityLoadFaction;
         [2, "Using VN CIV Template", _filename] call A3A_fnc_log;
@@ -470,6 +490,7 @@ if (A3A_hasRHS) then {call compileScript ["Templates\NewTemplates\RHS\RHS_Logist
 if (A3A_has3CBFactions) then {call compileScript ["Templates\NewTemplates\3CBF\3CBF_Logistics_Nodes.sqf"]};
 if (A3A_hasCup) then {call compileScript ["Templates\NewTemplates\CUP\Cup_Logistics_Nodes.sqf"];};
 if (A3A_hasAegis) then {call compileScript ["Templates\NewTemplates\Aegis\Aegis_Logistics_Nodes.sqf"];};
-if (A3A_hasGlobMob) then {call compileScript ["Templates\NewTemplates\GM\GM_Logistics_Nodes.sqf"];};
-if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};
+if (A3A_hasGlobMob) then {call compileScript ["Templates\NewTemplates\GM\GM_Logistics_Nodes.sqf"];};    // update my logistic nodes here
+if (A3A_hasVN) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN\VN_Logistics_Nodes.sqf"};    // update my logistic nodes here
 if (A3A_hasUR) then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN_UR\VN_UR_Logistics_Nodes.sqf"};
+if (A3A_hasVN && A3A_hasGlobMob)  then {call compile preProcessFileLineNumbers "Templates\NewTemplates\VN_GM\VN_GM_Logistics_Nodes.sqf"};
