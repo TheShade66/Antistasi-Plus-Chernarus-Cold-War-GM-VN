@@ -68,30 +68,33 @@
 ///////////////////////////
 //  Rebel Starting Gear  //
 ///////////////////////////
-//Civ Uniforms
 ["uniforms", [ 
-"U_I_C_Soldier_Para_5_F","U_I_C_Soldier_Bandit_1_F","U_O_R_Gorka_01_black_F","U_C_E_LooterJacket_01_F",
-"vn_b_uniform_seal_01_01","vn_b_uniform_seal_01_06","vn_b_uniform_seal_01_07","vn_b_uniform_seal_02_01","vn_b_uniform_seal_02_06","vn_b_uniform_seal_02_07",
-"vn_b_uniform_seal_06_02","vn_b_uniform_seal_06_05","vn_b_uniform_seal_06_07","vn_b_uniform_seal_06_01","vn_b_uniform_seal_06_06","vn_b_uniform_seal_04_01",
-"vn_o_vest_05","gm_gc_army_vest_80_belt_str","gm_ge_army_vest_80_belt","gm_ge_army_vest_80_bag","gm_pl_army_vest_80_rig_gry","gm_pl_army_vest_80_rifleman_smg_gry",
-"U_I_C_Soldier_Para_5_F","U_I_C_Soldier_Bandit_1_F","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_3_F","U_I_C_Soldier_Bandit_4_F","U_I_C_Soldier_Bandit_5_F","U_C_Poloshirt_blue","U_C_Poloshirt_burgundy",
-"U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite","U_BG_Guerilla2_1","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_C_HunterBody_grn",
+"U_IG_Guerilla1_1","U_IG_Guerilla2_1","U_IG_Guerilla2_2","U_IG_Guerilla2_3","U_IG_Guerilla3_1","U_IG_leader","U_IG_Guerrilla_6_1","U_I_G_resistanceLeader_F","U_I_L_Uniform_01_camo_F","U_I_L_Uniform_01_deserter_F", //added to prevent nakeds
+"U_I_C_Soldier_Para_5_F","U_I_C_Soldier_Bandit_2_F","U_I_C_Soldier_Bandit_3_F","U_I_C_Soldier_Bandit_4_F","U_I_C_Soldier_Bandit_5_F","U_C_Poloshirt_blue","U_C_Poloshirt_burgundy",
+"U_C_Poloshirt_stripped","U_C_Poloshirt_tricolour","U_C_Poloshirt_salmon","U_C_Poloshirt_redwhite","U_BG_Guerilla2_1","U_BG_Guerilla2_3","U_BG_Guerilla3_1","U_C_HunterBody_grn","U_I_C_Soldier_Bandit_1_F","U_O_R_Gorka_01_black_F",
 "U_Marshal","U_C_Man_casual_1_F", "U_C_Man_casual_2_F","U_C_Man_casual_3_F","U_C_Man_casual_4_F","U_C_Man_casual_5_F","U_C_Man_casual_6_F","U_C_Mechanic_01_F","U_C_Uniform_Farmer_01_F","U_C_E_LooterJacket_01_F","U_C_FormalSuit_01_black_F",
-"U_C_FormalSuit_01_gray_F","U_C_FormalSuit_01_blue_F","U_C_FormalSuit_01_khaki_F","U_C_FormalSuit_01_tshirt_black_F","U_C_FormalSuit_01_tshirt_gray_F","gm_gc_airforce_uniform_pilot_80_blu","gm_ge_civ_uniform_blouse_80_gry",
+"U_C_FormalSuit_01_gray_F","U_C_FormalSuit_01_blue_F","U_C_FormalSuit_01_khaki_F","U_C_FormalSuit_01_tshirt_black_F","U_C_FormalSuit_01_tshirt_gray_F",
+"vn_b_uniform_seal_01_01","vn_b_uniform_seal_01_06","vn_b_uniform_seal_01_07","vn_b_uniform_seal_02_01","vn_b_uniform_seal_02_06","vn_b_uniform_seal_02_07","vn_b_uniform_macv_06_06",
+"vn_b_uniform_seal_06_02","vn_b_uniform_seal_06_05","vn_b_uniform_seal_06_07","vn_b_uniform_seal_06_01","vn_b_uniform_seal_06_06","vn_b_uniform_seal_04_01","vn_o_vest_05",
+"gm_ge_civ_uniform_blouse_80_gry","gm_gc_army_vest_80_belt_str","gm_ge_army_vest_80_belt","gm_ge_army_vest_80_bag","gm_pl_army_vest_80_rig_gry","gm_pl_army_vest_80_rifleman_smg_gry",
 "gm_ge_ff_uniform_man_80_orn","gm_pl_airforce_uniform_pilot_80_gry","gm_gc_civ_uniform_man_01_80_blk","gm_gc_civ_uniform_man_01_80_blu","gm_gc_civ_uniform_man_02_80_brn","gm_gc_civ_uniform_man_03_80_grn",
-"gm_gc_civ_uniform_man_03_80_blu","gm_gc_civ_uniform_man_03_80_gry","gm_gc_civ_uniform_man_04_80_blu","gm_gc_civ_uniform_man_04_80_gry","gm_gc_civ_uniform_pilot_80_blk"]] call _fnc_saveToTemplate;
+"gm_gc_civ_uniform_man_03_80_blu","gm_gc_civ_uniform_man_03_80_gry","gm_gc_civ_uniform_man_04_80_blu","gm_gc_civ_uniform_man_04_80_gry","gm_gc_civ_uniform_pilot_80_blk","gm_gc_airforce_uniform_pilot_80_blu"
+]] call _fnc_saveToTemplate;
 
-["headgear", [																// DONE
+["headgear", [
 "H_Booniehat_oli","H_Cap_red","H_Cap_blu","H_Cap_oli","H_Cap_tan","H_Cap_blk","H_Cap_grn",
 "H_ShemagOpen_khk","H_ShemagOpen_tan","H_StrawHat","H_StrawHat_dark","H_Hat_blue","H_Hat_brown","H_Hat_camo","H_Hat_grey","H_Hat_checker","H_Hat_tan","H_Hat_Safari_sand_F","H_Hat_Safari_olive_F",
-"H_HeadBandage_clean_F","vn_b_boonie_02_01","vn_b_boonie_02_03","vn_b_boonie_02_06","vn_b_boonie_01_01","vn_b_boonie_01_03","vn_b_boonie_01_04","vn_b_boonie_01_06","vn_b_boonie_03_01","vn_b_boonie_03_03",
+"H_HeadBandage_clean_F","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk","G_Bandanna_beast","G_Bandanna_aviator",
+"gm_gc_army_headgear_hat_80_grn","gm_gc_bgs_headgear_hat_80_gry","gm_ge_headgear_beret_mrb","gm_ge_headgear_beret_red_engineer","gm_ge_headgear_hat_80_oli","gm_ge_headgear_hat_80_gry","G_Squares",
+"vn_b_boonie_02_01","vn_b_boonie_02_03","vn_b_boonie_02_06","vn_b_boonie_01_01","vn_b_boonie_01_03","vn_b_boonie_01_04","vn_b_boonie_01_06","vn_b_boonie_03_01","vn_b_boonie_03_03",
 "vn_b_boonie_03_04","vn_b_boonie_04_01","vn_b_boonie_04_04","vn_b_boonie_04_06","vn_b_boonie_05_01","vn_b_boonie_05_03","vn_b_boonie_05_06","vn_b_bandana_01","vn_b_bandana_03","vn_b_bandana_06","vn_b_headband_01",
-"vn_b_headband_03","vn_b_headband_04","vn_b_headband_05","vn_b_beret_01_01","vn_b_beret_01_02","vn_b_beret_01_04","vn_b_beret_01_05","vn_c_headband_01","vn_c_headband_03","vn_c_headband_04","gm_gc_army_headgear_hat_80_grn",
-"gm_gc_bgs_headgear_hat_80_gry","gm_ge_headgear_beret_mrb","gm_ge_headgear_beret_red_engineer","gm_ge_headgear_hat_80_oli","gm_ge_headgear_hat_80_gry","G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
-"G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
-"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02"]] call _fnc_saveToTemplate;
+"vn_b_headband_03","vn_b_headband_04","vn_b_headband_05","vn_b_beret_01_01","vn_b_beret_01_02","vn_b_beret_01_04","vn_b_beret_01_05","vn_c_headband_01","vn_c_headband_03","vn_c_headband_04","vn_o_scarf_01_01",
+"vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
+"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02"
+]] call _fnc_saveToTemplate;
 
-private _initialRebelEquipment = ["vn_izh54","vn_izh54_shorty","sgun_HunterShotgun_01_F","sgun_HunterShotgun_01_sawedoff_F",				//DONE
+private _initialRebelEquipment = [
+"vn_izh54","vn_izh54_shorty","sgun_HunterShotgun_01_F","sgun_HunterShotgun_01_sawedoff_F",
 "vn_m1891","vn_m1891_bayo","vn_m9130","vn_m9130_bayo","vn_welrod","vn_welrod_mag","vn_fkb1_pm","vn_fkb1","vn_m1895","vn_m10","vn_p38s","gm_lp1_blk", "G_Squares_Tinted","G_Aviator",
 "vn_izh54_mag","vn_izh54_so_mag","2Rnd_12Gauge_Pellets","2Rnd_12Gauge_Slug","vn_pm_mag","vn_m1895_mag","vn_m10_mag","gm_1Rnd_265mm_flare_single_wht_DM15","gm_1Rnd_265mm_flare_multi_wht_DM25","vn_b_item_watch","gm_photocamera_01_blk","H_Bandanna_cbr","H_Bandanna_sgg","H_Shemag_olive",
 "H_Booniehat_oli","H_Cap_red","H_Cap_blu","H_Cap_oli","H_Cap_tan","H_Cap_blk","H_Cap_grn",
@@ -101,11 +104,12 @@ private _initialRebelEquipment = ["vn_izh54","vn_izh54_shorty","sgun_HunterShotg
 "vn_b_headband_03","vn_b_headband_04","vn_b_headband_05","vn_b_beret_01_01","vn_b_beret_01_02","vn_b_beret_01_04","vn_b_beret_01_05","vn_c_headband_01","vn_c_headband_03","vn_c_headband_04","gm_gc_army_headgear_hat_80_grn",
 "gm_gc_bgs_headgear_hat_80_gry","gm_ge_headgear_beret_mrb","gm_ge_headgear_beret_red_engineer","gm_ge_headgear_hat_80_oli","gm_ge_headgear_hat_80_gry","G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
 "G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
-"B_Messenger_Coyote_F","B_Messenger_Olive_F","B_Messenger_Black_F","B_Messenger_Gray_F","B_LegStrapBag_black_F","B_LegStrapBag_olive_F",
+"B_Messenger_Coyote_F","B_Messenger_Olive_F","B_Messenger_Black_F","B_Messenger_Gray_F","B_LegStrapBag_black_F","B_LegStrapBag_olive_F","B_LegStrapBag_coyote_F",
 "vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02","vn_m38_t_mag","gm_ge_backpack_satchel_80_blk",
 "G_Squares","G_Squares_Tinted","G_Aviator","G_Balaclava_blk","G_Balaclava_oli","G_Bandanna_blk",
 "G_Bandanna_beast","G_Bandanna_aviator","vn_o_scarf_01_01","vn_o_scarf_01_02","vn_o_scarf_01_03","vn_o_scarf_01_04","vn_b_aviator","vn_b_squares","vn_b_squares_tinted","vn_b_bandana_a","vn_o_acc_goggles_02","vn_b_scarf_01_01","vn_b_acc_goggles_01",
-"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02","vn_b_m38"];
+"vn_g_glasses_01","vn_g_spectacles_02","vn_b_acc_m17_01","vn_b_acc_m17_02","vn_b_m38"
+];
 
 ["initialRebelEquipment", _initialRebelEquipment] call _fnc_saveToTemplate;
 
@@ -193,8 +197,10 @@ _loadoutData setVariable ["compasses", ["vn_b_item_compass"]];
 _loadoutData setVariable ["radios", []];
 _loadoutData setVariable ["binoculars", ["vn_m19_binocs_grey"]];
 
-_loadoutData setVariable ["uniforms", ["vn_b_uniform_seal_01_01","vn_b_uniform_seal_01_06","vn_b_uniform_seal_01_07","vn_b_uniform_seal_02_01","vn_b_uniform_seal_02_06","vn_b_uniform_seal_02_07",
-"vn_b_uniform_seal_06_02","vn_b_uniform_seal_06_05","vn_b_uniform_seal_06_07","vn_b_uniform_seal_06_01","vn_b_uniform_seal_06_06"]];
+_loadoutData setVariable ["uniforms", [
+"vn_b_uniform_seal_01_01","vn_b_uniform_seal_01_06","vn_b_uniform_seal_01_07","vn_b_uniform_seal_02_01","vn_b_uniform_seal_02_06","vn_b_uniform_seal_02_07",
+"vn_b_uniform_seal_06_02","vn_b_uniform_seal_06_05","vn_b_uniform_seal_06_07","vn_b_uniform_seal_06_01","vn_b_uniform_seal_06_06","vn_b_uniform_macv_06_06"
+]];
 _loadoutData setVariable ["vests", []];
 _loadoutData setVariable ["backpacks", []];
 _loadoutData setVariable ["longRangeRadios", []];

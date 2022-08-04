@@ -199,7 +199,7 @@ _loadoutData setVariable ["marksmanRifles", []];
 _loadoutData setVariable ["sniperRifles", []];
 
 _loadoutData setVariable ["ATLaunchers", ["vn_rpg2", "vn_rpg7"]];
-_loadoutData setVariable ["AALaunchers", ["vn_sa7", "vn_sa7b","gm_9k32m_oli"]];
+_loadoutData setVariable ["AALaunchers", ["gm_9k32m_oli"]];
 _loadoutData setVariable ["sidearms", []];
 
 _loadoutData setVariable ["ATMines", ["vn_mine_tripwire_f1_04_mag"]];
