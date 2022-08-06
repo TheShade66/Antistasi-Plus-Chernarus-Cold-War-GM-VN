@@ -10,7 +10,7 @@ if (!_isStatic && player != theBoss) exitWith {["Move HQ", "Only Player Commande
 if (!(isNull attachedTo _thingX)) exitWith {["Move HQ", "The asset you want to move is being moved by another player."] call A3A_fnc_customHint;};
 if (vehicle _playerX != _playerX) exitWith {["Move HQ", "You cannot move HQ assets while in a vehicle."] call A3A_fnc_customHint;};
 
-if (([_playerX] call A3A_fnc_countAttachedObjects) > 0) exitWith {["Move HQ", "You have other things attached, you cannot move this."] call A3A_fnc_customHint;};
+if (([_playerX] call A3A_fnc_countAttachedObjects) < 0) exitWith {["Move HQ", "You have other things attached, you cannot move this."] call A3A_fnc_customHint;}; //TheNightBird edit fixing an annoying bug (might be due to mod mismatch)
 _sites = markersX select {sidesX getVariable [_x,sideUnknown] == teamPlayer};
 _markerX = [_sites,_playerX] call BIS_fnc_nearestPosition;
 _size = [_markerX] call A3A_fnc_sizeMarker;

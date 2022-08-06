@@ -13,7 +13,7 @@ if (!(isNull attachedTo _thingX)) exitWith {
 if (vehicle _playerX != _playerX) exitWith {
 	["Move Asset Failed", "You cannot move assets while being in a vehicle."] call SCRT_fnc_misc_showDeniedActionHint;
 };
-if (([_playerX] call A3A_fnc_countAttachedObjects) > 0) exitWith {
+if (([_playerX] call A3A_fnc_countAttachedObjects) < 0) exitWith {	//TheNightBird edit fixing an annoying bug (might be due to mod mismatch)
 	["Move Asset Failed", "You have other things attached, you cannot move this."] call SCRT_fnc_misc_showDeniedActionHint;
 };
 
