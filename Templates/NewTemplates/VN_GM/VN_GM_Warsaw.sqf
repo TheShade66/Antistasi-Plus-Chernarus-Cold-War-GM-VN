@@ -259,56 +259,71 @@ _loadoutData setVariable ["items_unarmed_extras", []];
 
 //TODO - ACE overrides for misc essentials, medical and engineer gear
 
+
+///////////////////////////////
+//    Police Loadout Data    //
+///////////////////////////////
+
+private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
+_policeLoadoutData setVariable ["uniforms", ["gm_gc_pol_uniform_dress_80_blu","gm_ge_pol_uniform_suit_80_grn"]];
+_policeLoadoutData setVariable ["vests", ["gm_ge_pol_vest_80_wht"]];
+_policeLoadoutData setVariable ["helmets", ["gm_ge_pol_headgear_cap_80_wht","gm_ge_pol_headgear_cap_80_grn"]];
+_policeLoadoutData setVariable ["rifles", [
+["sgun_HunterShotgun_01_F", "", "", "", ["2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets"], [], ""],
+["vn_m1897", "", "", "", ["vn_m1897_fl_mag", "vn_m1897_fl_mag", "vn_m1897_buck_mag"], [], ""],
+["vn_mp40", "", "", "", ["vn_mp40_mag", "vn_mp40_mag", "vn_mp40_mag"], [], ""],
+["vn_ppsh41", "", "", "", ["vn_ppsh41_35_mag", "vn_ppsh41_35_t_mag", "vn_ppsh41_71_t_mag"], [], ""],
+["vn_pps52", "", "", "", ["vn_pps_mag", "vn_pps_mag", "vn_pps_t_mag"], [], ""],
+["vn_pps43", "", "", "", ["vn_pps_mag", "vn_pps_mag", "vn_pps_t_mag"], [], ""]
+]];
+_policeLoadoutData setVariable ["antiInfantryGrenades", ["gm_handgrenade_frag_rgd5"]];
+
+////////////////////////////////
+//    Militia Loadout Data    //	BORDERGUARDS, LOCAL FORCE
+////////////////////////////////
 //["Weapon", "Muzzle", "Rail", "Sight", [], [], "Bipod"];
 
-///////////////////////////////////////
-//    Special Forces Loadout Data    //		//Lizards
-///////////////////////////////////////
-
-private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_sfLoadoutData setVariable ["uniforms", ["vn_b_uniform_macv_04_08","vn_b_uniform_macv_05_08","vn_b_uniform_macv_04_08","vn_b_uniform_macv_03_08","vn_b_uniform_macv_02_08"]];			
-_sfLoadoutData setVariable ["vests", ["vn_b_vest_seal_03","vn_b_vest_seal_07","vn_b_vest_seal_06","vn_b_vest_seal_04","vn_b_vest_seal_05"]];
-_sfLoadoutData setVariable ["SLvests", ["vn_b_vest_seal_02"]];
-_sfLoadoutData setVariable ["backpacks", ["gm_dk_army_backpack_73_oli"]];
-_sfLoadoutData setVariable ["helmets", ["gm_pl_army_headgear_wz67_net_oli","gm_pl_army_headgear_wz67_oli"]];	
-_sfLoadoutData setVariable ["longRangeRadios", ["gm_gc_backpack_r105m_brn"]];	
-_sfLoadoutData setVariable ["lightATLaunchers", ["vn_rpg7"]];	
-_sfLoadoutData setVariable ["heavyATLaunchers", [
+private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
+_militiaLoadoutData setVariable ["uniforms", ["gm_ge_bgs_uniform_soldier_80_smp"]];
+_militiaLoadoutData setVariable ["vests", ["gm_gc_army_vest_80_rifleman_str", "gm_gc_vest_combatvest3_str","gm_gc_bgs_vest_80_border_str","gm_gc_army_vest_80_leader_str"]];
+_militiaLoadoutData setVariable ["ATvests", ["gm_gc_army_vest_80_at_str"]];	
+_militiaLoadoutData setVariable ["backpacks", ["gm_gc_army_backpack_80_assaultpack_empty_str", "gm_gc_army_backpack_80_assaultpack_lmg_str","gm_gc_army_backpack_80_lmg_str"]];
+_militiaLoadoutData setVariable ["helmets", ["gm_ge_bgs_headgear_m35_53_blk"]];
+_militiaLoadoutData setVariable ["Atbackpacks", ["gm_gc_army_backpack_80_at_str"]];
+_militiaLoadoutData setVariable ["longRangeRadios", ["gm_gc_backpack_r105m_brn"]];
+_militiaLoadoutData setVariable ["heavyATLaunchers", [
 ["gm_rpg7_wud", "", "", "",["gm_1Rnd_40mm_heat_pg7v_rpg7"], [], ""],
 ["gm_rpg7_wud", "", "", "gm_pgo7v_blk",["gm_1Rnd_40mm_heat_pg7v_rpg7", "gm_1Rnd_40mm_heat_pg7v_rpg7", "gm_1Rnd_40mm_heat_pg7v_rpg7"], [], ""]
 ]];
-_sfLoadoutData setVariable ["Atbackpacks", ["gm_dk_army_backpack_73_oli"]];
-_sfLoadoutData setVariable ["rifles", [
-["vn_m63a", "", "", "", ["vn_m63a_30_mag", "vn_m63a_30_mag", "vn_m63a_30_t_mag"], [], ""],
-["vn_m63a_cdo", "", "", "", ["vn_m63a_150_mag", "vn_m63a_150_mag", "vn_m63a_150_t_mag"], [], ""],
-["gm_mpikm72_prp", "", "", "", ["gm_30Rnd_762x39mm_B_57N231_ak47_blk", "gm_30Rnd_762x39mm_AP_7N23_ak47_blk", "gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk"], [], ""]
+_militiaLoadoutData setVariable ["lightATLaunchers", ["vn_rpg7"]];
+_militiaLoadoutData setVariable ["Medbackpacks", ["gm_ge_backpack_satchel_80_san"]];
+
+_militiaLoadoutData setVariable ["rifles", [
+["vn_sks", "", "", "", ["vn_sks_t_mag", "vn_sks_t_mag", "vn_sks_t_mag"], [], ""],
+["vn_sks", "", "", "vn_o_3x_m9130", ["vn_sks_t_mag", "vn_sks_t_mag", "vn_sks_t_mag"], [], ""],
+["gm_mpiaks74n_prp", "", "", "", ["gm_30Rnd_545x39mm_B_7N6_ak74_prp", "gm_30Rnd_545x39mm_B_7N6_ak74_prp", "gm_30Rnd_545x39mm_B_7N6_ak74_prp"], [], ""],
+["vn_m9130", "", "", "vn_o_3x_m9130", ["vn_m38_mag", "vn_m38_t_mag", "vn_m38_t_mag"], [], ""]
 ]];
-_sfLoadoutData setVariable ["carbines", [
-["gm_mpiaks74nk_prp", "", "", "", ["gm_45Rnd_545x39mm_B_7N6_ak74_prp", "gm_45Rnd_545x39mm_B_7N6_ak74_prp", "gm_45Rnd_545x39mm_B_T_7T3_ak74_prp"], [], ""]
+_militiaLoadoutData setVariable ["carbines", [
+["vn_k50m", "", "", "", ["vn_ppsh41_71_t_mag", "vn_ppsh41_71_t_mag", "vn_ppsh41_71_t_mag"], [], ""]
 ]];
-_sfLoadoutData setVariable ["grenadelaunchers", [
-["gm_akm_pallad_wud", "", "", "", ["gm_30Rnd_762x39mm_B_57N231_ak47_blk","gm_30Rnd_762x39mm_B_57N231_ak47_blk","gm_30Rnd_762x39mm_B_57N231_ak47_blk"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
-["gm_pallad_d_brn", "", "", "", ["1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+_militiaLoadoutData setVariable ["grenadeLaunchers", [
+["vn_sks_gl", "", "", "", ["vn_sks_t_mag", "vn_sks_t_mag", "vn_sks_t_mag"], ["vn_22mm_m60_frag_mag", "vn_22mm_m60_frag_mag", "vn_22mm_m60_frag_mag", "vn_22mm_m60_frag_mag", "vn_22mm_m22_smoke_mag"], ""]
 ]];
-_sfLoadoutData setVariable ["smgs", [ //seems to be they're not used
-["gm_mpikms72_prp", "", "", "", ["gm_30Rnd_762x39mm_B_57N231_ak47_blk", "gm_30Rnd_762x39mm_AP_7N23_ak47_blk", "gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk"], [], ""]
+_militiaLoadoutData setVariable ["machineGuns", [
+["vn_dp28", "", "", "",["vn_dp28_mag", "vn_dp28_mag", "vn_dp28_mag"], [], ""]
 ]];
-_sfLoadoutData setVariable ["machineGuns", [
-["gm_rpk_wud", "", "", "",["gm_75Rnd_762x39mm_B_M43_ak47_blk", "gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk", "gm_75Rnd_762x39mm_AP_7N23_ak47_blk"], [], ""],
-["vn_m63a_lmg", "", "", "",["vn_m63a_100_mag", "vn_m63a_100_mag", "vn_m63a_100_t_mag"], [], ""],
-["gm_lmgrpk_prp", "", "", "",["gm_75Rnd_762x39mm_B_M43_ak47_blk", "gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk", "gm_100Rnd_762x54mm_API_b32_pk_grn"], [], ""]
+_militiaLoadoutData setVariable ["marksmanRifles", [
+["vn_m9130", "", "", "vn_o_3x_m9130", ["vn_m38_mag", "vn_m38_t_mag", "vn_m38_t_mag"], [], ""]
 ]];
-_sfLoadoutData setVariable ["marksmanRifles", [
-["gm_svd_wud", "", "", "gm_pso1_gry", ["gm_10Rnd_762x54mmR_AP_7N1_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_B_T_7t2_svd_blk"], [], ""]
-]];
-_sfLoadoutData setVariable ["sidearms", [
-["vn_pm", "vn_s_pm", "", "", ["vn_pm_mag","vn_pm_mag","vn_pm_mag"], [], ""]
-]];
+_militiaLoadoutData setVariable ["sidearms", ["gm_pm_blk"]];
+
+
 
 /////////////////////////////////
 //    Military Loadout Data    // 		ARMY GER, very AK heavy, to do?
 /////////////////////////////////
-
+//["Weapon", "Muzzle", "Rail", "Sight", [], [], "Bipod"];
 
 private _militaryLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
 _militaryLoadoutData setVariable ["uniforms", ["gm_gc_army_uniform_soldier_80_str","gm_gc_army_uniform_soldier_gloves_80_str"]];
@@ -364,6 +379,7 @@ _militaryLoadoutData setVariable ["sidearms", ["gm_pm_blk"]];
 /////////////////////////////////
 //    Elite Loadout Data    // 		ARMY POLSKA + ARMOR
 /////////////////////////////////
+//["Weapon", "Muzzle", "Rail", "Sight", [], [], "Bipod"];
 
 
 private _eliteLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
@@ -417,62 +433,52 @@ _eliteLoadoutData setVariable ["marksmanRifles", [
 _eliteLoadoutData setVariable ["sidearms", [["vn_pm", "vn_s_pm", "", "", ["vn_pm_mag","vn_pm_mag","vn_pm_mag"], [], ""]
 ]];
 
-///////////////////////////////
-//    Police Loadout Data    //
-///////////////////////////////
 
-private _policeLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
-_policeLoadoutData setVariable ["uniforms", ["gm_gc_pol_uniform_dress_80_blu","gm_ge_pol_uniform_suit_80_grn"]];
-_policeLoadoutData setVariable ["vests", ["gm_ge_pol_vest_80_wht"]];
-_policeLoadoutData setVariable ["helmets", ["gm_ge_pol_headgear_cap_80_wht","gm_ge_pol_headgear_cap_80_grn"]];
-_policeLoadoutData setVariable ["rifles", [
-["sgun_HunterShotgun_01_F", "", "", "", ["2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets", "2Rnd_12Gauge_Pellets"], [], ""],
-["vn_m1897", "", "", "", ["vn_m1897_fl_mag", "vn_m1897_fl_mag", "vn_m1897_buck_mag"], [], ""],
-["vn_mp40", "", "", "", ["vn_mp40_mag", "vn_mp40_mag", "vn_mp40_mag"], [], ""],
-["vn_ppsh41", "", "", "", ["vn_ppsh41_35_mag", "vn_ppsh41_35_t_mag", "vn_ppsh41_71_t_mag"], [], ""],
-["vn_pps52", "", "", "", ["vn_pps_mag", "vn_pps_mag", "vn_pps_t_mag"], [], ""],
-["vn_pps43", "", "", "", ["vn_pps_mag", "vn_pps_mag", "vn_pps_t_mag"], [], ""]
-]];
-_policeLoadoutData setVariable ["antiInfantryGrenades", ["gm_handgrenade_frag_rgd5"]];
+///////////////////////////////////////
+//    Special Forces Loadout Data    //		//Lizards
+///////////////////////////////////////
+//["Weapon", "Muzzle", "Rail", "Sight", [], [], "Bipod"];
 
-////////////////////////////////
-//    Militia Loadout Data    //	BORDERGUARDS, LOCAL FORCE
-////////////////////////////////
-
-private _militiaLoadoutData = _loadoutData call _fnc_copyLoadoutData;
-_militiaLoadoutData setVariable ["uniforms", ["gm_ge_bgs_uniform_soldier_80_smp"]];
-_militiaLoadoutData setVariable ["vests", ["gm_gc_army_vest_80_rifleman_str", "gm_gc_vest_combatvest3_str","gm_gc_bgs_vest_80_border_str","gm_gc_army_vest_80_leader_str"]];
-_militiaLoadoutData setVariable ["ATvests", ["gm_gc_army_vest_80_at_str"]];	
-_militiaLoadoutData setVariable ["backpacks", ["gm_gc_army_backpack_80_assaultpack_empty_str", "gm_gc_army_backpack_80_assaultpack_lmg_str","gm_gc_army_backpack_80_lmg_str"]];
-_militiaLoadoutData setVariable ["helmets", ["gm_ge_bgs_headgear_m35_53_blk"]];
-_militiaLoadoutData setVariable ["Atbackpacks", ["gm_gc_army_backpack_80_at_str"]];
-_militiaLoadoutData setVariable ["longRangeRadios", ["gm_gc_backpack_r105m_brn"]];
-_militiaLoadoutData setVariable ["heavyATLaunchers", [
+private _sfLoadoutData = _loadoutData call _fnc_copyLoadoutData; 
+_sfLoadoutData setVariable ["uniforms", ["vn_b_uniform_macv_04_08","vn_b_uniform_macv_05_08","vn_b_uniform_macv_04_08","vn_b_uniform_macv_03_08","vn_b_uniform_macv_02_08"]];			
+_sfLoadoutData setVariable ["vests", ["vn_b_vest_seal_03","vn_b_vest_seal_07","vn_b_vest_seal_06","vn_b_vest_seal_04","vn_b_vest_seal_05"]];
+_sfLoadoutData setVariable ["SLvests", ["vn_b_vest_seal_02"]];
+_sfLoadoutData setVariable ["backpacks", ["gm_dk_army_backpack_73_oli"]];
+_sfLoadoutData setVariable ["helmets", ["gm_pl_army_headgear_wz67_net_oli","gm_pl_army_headgear_wz67_oli"]];	
+_sfLoadoutData setVariable ["longRangeRadios", ["gm_gc_backpack_r105m_brn"]];	
+_sfLoadoutData setVariable ["lightATLaunchers", ["vn_rpg7"]];	
+_sfLoadoutData setVariable ["heavyATLaunchers", [
 ["gm_rpg7_wud", "", "", "",["gm_1Rnd_40mm_heat_pg7v_rpg7"], [], ""],
 ["gm_rpg7_wud", "", "", "gm_pgo7v_blk",["gm_1Rnd_40mm_heat_pg7v_rpg7", "gm_1Rnd_40mm_heat_pg7v_rpg7", "gm_1Rnd_40mm_heat_pg7v_rpg7"], [], ""]
 ]];
-_militiaLoadoutData setVariable ["lightATLaunchers", ["vn_rpg7"]];
-_militiaLoadoutData setVariable ["Medbackpacks", ["gm_ge_backpack_satchel_80_san"]];
+_sfLoadoutData setVariable ["Atbackpacks", ["gm_dk_army_backpack_73_oli"]];
+_sfLoadoutData setVariable ["rifles", [
+["vn_m63a", "", "", "", ["vn_m63a_30_mag", "vn_m63a_30_mag", "vn_m63a_30_t_mag"], [], ""],
+["vn_m63a_cdo", "", "", "", ["vn_m63a_150_mag", "vn_m63a_150_mag", "vn_m63a_150_t_mag"], [], ""],
+["gm_mpikm72_prp", "", "", "", ["gm_30Rnd_762x39mm_B_57N231_ak47_blk", "gm_30Rnd_762x39mm_AP_7N23_ak47_blk", "gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk"], [], ""]
+]];
+_sfLoadoutData setVariable ["carbines", [
+["gm_mpiaks74nk_prp", "", "", "", ["gm_45Rnd_545x39mm_B_7N6_ak74_prp", "gm_45Rnd_545x39mm_B_7N6_ak74_prp", "gm_45Rnd_545x39mm_B_T_7T3_ak74_prp"], [], ""]
+]];
+_sfLoadoutData setVariable ["grenadelaunchers", [
+["gm_akm_pallad_wud", "", "", "", ["gm_30Rnd_762x39mm_B_57N231_ak47_blk","gm_30Rnd_762x39mm_B_57N231_ak47_blk","gm_30Rnd_762x39mm_B_57N231_ak47_blk"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""],
+["gm_pallad_d_brn", "", "", "", ["1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell","1Rnd_HE_Grenade_shell"], ["1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_HE_Grenade_shell", "1Rnd_Smoke_Grenade_shell"], ""]
+]];
+_sfLoadoutData setVariable ["smgs", [ //seems to be they're not used
+["gm_mpikms72_prp", "", "", "", ["gm_30Rnd_762x39mm_B_57N231_ak47_blk", "gm_30Rnd_762x39mm_AP_7N23_ak47_blk", "gm_30Rnd_762x39mm_B_T_57N231P_ak47_blk"], [], ""]
+]];
+_sfLoadoutData setVariable ["machineGuns", [
+["gm_rpk_wud", "", "", "",["gm_75Rnd_762x39mm_B_M43_ak47_blk", "gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk", "gm_75Rnd_762x39mm_AP_7N23_ak47_blk"], [], ""],
+["vn_m63a_lmg", "", "", "",["vn_m63a_100_mag", "vn_m63a_100_mag", "vn_m63a_100_t_mag"], [], ""],
+["gm_lmgrpk_prp", "", "", "",["gm_75Rnd_762x39mm_B_M43_ak47_blk", "gm_75Rnd_762x39mm_B_T_57N231P_ak47_blk", "gm_100Rnd_762x54mm_API_b32_pk_grn"], [], ""]
+]];
+_sfLoadoutData setVariable ["marksmanRifles", [
+["gm_svd_wud", "", "", "gm_pso1_gry", ["gm_10Rnd_762x54mmR_AP_7N1_svd_blk","gm_10Rnd_762x54mmR_API_7bz3_svd_blk","gm_10Rnd_762x54mmR_B_T_7t2_svd_blk"], [], ""]
+]];
+_sfLoadoutData setVariable ["sidearms", [
+["vn_pm", "vn_s_pm", "", "", ["vn_pm_mag","vn_pm_mag","vn_pm_mag"], [], ""]
+]];
 
-_militiaLoadoutData setVariable ["rifles", [
-["vn_sks", "", "", "", ["vn_sks_t_mag", "vn_sks_t_mag", "vn_sks_t_mag"], [], ""],
-["vn_sks", "", "", "vn_o_3x_m9130", ["vn_sks_t_mag", "vn_sks_t_mag", "vn_sks_t_mag"], [], ""],
-["gm_mpiaks74n_prp", "", "", "", ["gm_30Rnd_545x39mm_B_7N6_ak74_prp", "gm_30Rnd_545x39mm_B_7N6_ak74_prp", "gm_30Rnd_545x39mm_B_7N6_ak74_prp"], [], ""],
-["vn_m9130", "", "", "vn_o_3x_m9130", ["vn_m38_mag", "vn_m38_t_mag", "vn_m38_t_mag"], [], ""]
-]];
-_militiaLoadoutData setVariable ["carbines", [
-["vn_k50m", "", "", "", ["vn_ppsh41_71_t_mag", "vn_ppsh41_71_t_mag", "vn_ppsh41_71_t_mag"], [], ""]
-]];
-_militiaLoadoutData setVariable ["grenadeLaunchers", [
-["vn_sks_gl", "", "", "", ["vn_sks_t_mag", "vn_sks_t_mag", "vn_sks_t_mag"], ["vn_22mm_m60_frag_mag", "vn_22mm_m60_frag_mag", "vn_22mm_m60_frag_mag", "vn_22mm_m60_frag_mag", "vn_22mm_m22_smoke_mag"], ""]
-]];
-_militiaLoadoutData setVariable ["machineGuns", [
-["vn_dp28", "", "", "",["vn_dp28_mag", "vn_dp28_mag", "vn_dp28_mag"], [], ""]
-]];
-_militiaLoadoutData setVariable ["marksmanRifles", [
-["vn_m9130", "", "", "vn_o_3x_m9130", ["vn_m38_mag", "vn_m38_t_mag", "vn_m38_t_mag"], [], ""]
-]];
-_militiaLoadoutData setVariable ["sidearms", ["gm_pm_blk"]];
 
 //////////////////////////
 //    Misc Loadouts     //
