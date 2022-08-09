@@ -104,18 +104,18 @@
     ,"vn_c_car_02_01", 1.8
     ,"vn_c_car_03_01", 1.8
     ,"vn_c_car_01_01", 1.8
-    ,"vn_c_bicycle_01", 0.2
+    ,"vn_c_bicycle_01", 1.0
     ,"vn_c_car_04_01", 0.2 
     ,"gm_ge_civ_typ1200", 1.0
 	,"gm_gc_civ_p601", 2.0
 	,"gm_ge_civ_u1300l", 1.0
-	,"gm_gc_civ_ural375d_cargo", 1.3
-	,"gm_gc_ff_p601", 0.2
-	,"gm_gc_dp_p601", 0.2
+	,"gm_gc_civ_ural375d_cargo", 1.0
+	,"gm_gc_ff_p601", 2.0
+	,"gm_gc_dp_p601", 2.0
 	,"gm_xx_civ_bicycle_01", 2.0
-	,"gm_ge_ff_typ1200", 1.1
-	,"gm_ge_dbp_typ1200", 1.1
-	,"gm_ge_ff_u1300l_firefighter", 1.1
+	,"gm_ge_ff_typ1200", 2.0
+	,"gm_ge_dbp_typ1200", 2.0
+	,"gm_ge_ff_u1300l_firefighter", 0.5
     ]] call _fnc_saveToTemplate;
 
 ["vehiclesCivIndustrial", [
