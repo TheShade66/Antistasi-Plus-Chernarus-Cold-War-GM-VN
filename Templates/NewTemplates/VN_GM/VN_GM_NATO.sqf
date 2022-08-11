@@ -144,7 +144,7 @@
 ["vehiclesMilitiaLightArmed", ["vn_i_wheeled_m151_mg_01_mp","gm_ge_army_iltis_mg3"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTrucks", ["gm_ge_army_u1300l_cargo", "gm_ge_army_kat1_451_cargo"]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaCars", ["gm_ge_army_iltis_cargo"]] call _fnc_saveToTemplate;
-["vehiclesMilitiaApcs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01","gm_ge_army_iltis_mg3"]] call _fnc_saveToTemplate;
+["vehiclesMilitiaApcs", ["vn_b_wheeled_m54_mg_03","vn_b_wheeled_m54_mg_01","gm_ge_army_iltis_mg3","gm_ge_army_fuchsa0_command","vn_b_wheeled_m151_mg_04_mp",""]] call _fnc_saveToTemplate;
 ["vehiclesMilitiaTanks", ["gm_ge_army_Leopard1a1"]] call _fnc_saveToTemplate;
 
 ["vehiclesPolice", ["vn_b_wheeled_m151_02_mp", "gm_ge_army_iltis_cargo"]] call _fnc_saveToTemplate;
